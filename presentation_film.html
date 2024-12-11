@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Page d'accueil</title>
+
+    <link
+    rel="icon"
+    type="image/png"
+    href="/assets/favicons/favicon-32x32.png"
+    sizes="96x96"
+  />
+  <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
+  <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/assets/favicons/apple-touch-icon.png"
+  />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+
+  <link rel="stylesheet" href="/src/css/style.css" />
+  <script type="module" src="/src/js/script.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="assets/icons/logo64.svg" alt="Logo"></a>
+        <img src="assets/img/page_presentation_film.webp" alt="Entête">
+
+        <button
+        class="header__menu-btn menu-btn"
+        aria-label="menu"
+        aria-expanded="false"
+        aria-controls="mainNav"
+      >
+
+      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+        <ul class="menu__list list-unstyled">
+          <li class="menu__item">
+            <a class="menu__link" href="festival.html">Festival</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="programmation.html">Programmation</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="liste_films.html">Liste des films</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="liste_invites.html">Liste des invités</a>
+          </li>
+        </ul>
+        <div class="menu__secondaire">
+          <ul
+            class="menu__social-network list-unstyled"
+            aria-label="Social media"
+          >
+            <li>
+              <a href="#" aria-label="Visitez notre profil Instagram"
+                ><img src="/assets/icons/instagram.svg" alt="Icone Instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Visitez notre profil Youtube"
+                ><img src="/assets/icons/youtube.svg" alt="Icone Youtube"
+              /></a>
+            </li>
+            <li>
+              <a href="#" aria-label="Visitez notre profil Twitter"
+                ><img src="/assets/icons/twitter.svg" alt="Icone Twitter"
+              /></a>
+            </li>
+          </ul>
+          <ul class="menu__terms list-unstyled" aria-label="Legal information">
+            <li>
+              <a class="menu__link menu__link--silent"
+                href="infos_pratiques.html">Infos Pratiques</a>
+                
+            </li>
+            <li>
+              <a class="menu__link menu__link--silent"
+                href="page_contact.html">Page contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+        <span class="menu-btn__bar" aria-hidden="true"></span>
+      </button>
+        <h1>Ça va trai'ler !</h1>
+        <h3>Du 25 au 21 avril 2025</h3>
+        <p>Festival audio-visuel et sportif de Belfort</p>
+    </header>
