@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,136 +25,130 @@
   <script type="module" src="/src/js/script.js"></script>
 </head>
 
-<body>
-    <header>
-        <a href="index.html"><img src="assets/icons/logo64.svg" alt="Logo"></a>
-        <img src="assets/img/page_presentation_film.webp" alt="Entête">
+<body id="page_presentation_film">
+  <header>
+      <a href="index.html"><img src="assets/icons/logo64.svg" alt="Logo"></a>
+      <img src="assets/img/page_invites.webp" alt="Entête">
 
-        <button
-        class="header__menu-btn menu-btn"
-        aria-label="menu"
-        aria-expanded="false"
-        aria-controls="mainNav"
-      >
+      <button
+      class="header__menu-btn menu-btn"
+      aria-label="menu"
+      aria-expanded="false"
+      aria-controls="mainNav">
+  </button>
 
-      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
-        <ul class="menu__list list-unstyled">
-          <li class="menu__item">
-            <a class="menu__link" href="festival.html">Festival</a>
+
+    <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+      <ul class="menu__list list-unstyled">
+        <li class="menu__item">
+          <a class="menu__link" href="festival.html">Festival</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="programmation.html">Programmation</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="liste_films.html">Liste des films</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="liste_invites.html">Liste des invités</a>
+        </li>
+      </ul>
+      <div class="menu__secondaire">
+        <ul
+          class="menu__social-network list-unstyled"
+          aria-label="Social media"
+        >
+          <li>
+            <a href="#" aria-label="Visitez notre profil Instagram"
+              ><img src="/assets/icons/instagram.svg" alt="Icone Instagram"
+            /></a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="programmation.html">Programmation</a>
+          <li>
+            <a href="#" aria-label="Visitez notre profil Youtube"
+              ><img src="/assets/icons/youtube.svg" alt="Icone Youtube"
+            /></a>
           </li>
-          <li class="menu__item">
-            <a class="menu__link" href="liste_films.html">Liste des films</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="liste_invites.html">Liste des invités</a>
+          <li>
+            <a href="#" aria-label="Visitez notre profil Twitter"
+              ><img src="/assets/icons/twitter.svg" alt="Icone Twitter"
+            /></a>
           </li>
         </ul>
-        <div class="menu__secondaire">
-          <ul
-            class="menu__social-network list-unstyled"
-            aria-label="Social media"
-          >
-            <li>
-              <a href="#" aria-label="Visitez notre profil Instagram"
-                ><img src="/assets/icons/instagram.svg" alt="Icone Instagram"
-              /></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Visitez notre profil Youtube"
-                ><img src="/assets/icons/youtube.svg" alt="Icone Youtube"
-              /></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Visitez notre profil Twitter"
-                ><img src="/assets/icons/twitter.svg" alt="Icone Twitter"
-              /></a>
-            </li>
-          </ul>
-          <ul class="menu__terms list-unstyled" aria-label="Legal information">
-            <li>
-              <a class="menu__link menu__link--silent"
-                href="infos_pratiques.html">Infos Pratiques</a>
-                
-            </li>
-            <li>
-              <a class="menu__link menu__link--silent"
-                href="page_contact.html">Page contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-        <span class="menu-btn__bar" aria-hidden="true"></span>
-      </button>
-    </header>
+        <ul class="menu__terms list-unstyled" aria-label="Legal information">
+          <li>
+            <a class="menu__link menu__link--silent"
+              href="infos_pratiques.html">Infos Pratiques</a>
+              
+          </li>
+          <li>
+            <a class="menu__link menu__link--silent"
+              href="page_contact.html">Page contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+      <span class="menu-btn__bar" aria-hidden="true"></span>
+  </header>
 
-    <section>
+
       <h1>Présentation du film</h1>
-    </section>
 
-    <section>
-      <h2> Présentation de "Omnibus"</h2>
-    </section>
-
-    <section>
-      <img src="assets/img/Poster - omnibus.webp" alt="Poster du film">
-    </section>
+      <h2> Présentation de "Omnibus" <img src="assets/img/Poster_omnibus.webp" alt="Poster du film"></h2>
 
     <section>
       <h2>Synopsis</h2>
       <p>En raison d'un changement d'horaires soudain, un homme se retrouve coincé dans un train qui ne dessert pas son arrêt. 
-        Il va alors tout faire pour arriver à l'heure afin de ne pas perdre son travail. 
+        Il va alors tout faire pour arriver à l'heure afin de ne pas perdre son travail.</p>
         
-        Entre solidarité et maladresse, les péripéties du pauvre employé ne font que commencer.</p>
+      <p>Entre solidarité et maladresse, les péripéties du pauvre employé ne font que commencer.</p>
     </section>
 
     <section>
       <h2>Bande-Annonce</h2>
-      <video src="assets/video/ba_omnibus.mp4"></video>
+      <video src="assets/video/ba_omnibus.mp4" controls poster="assets/img/poster_video_mp4.webp"></video>
+      <p>Durée : 8 min | Français</p>
+      <p>Production par Sam Karmann</p>
     </section>
     
     <section>
       <h2>Biographie du réalisateur</h2>
-      <p>Sam Karmann, né à Port-Saïd (Égypte), s'est formé au cours Florent et à l'ENSATT. 
+      <p>Sam Karmann, né à Port-Saïd (Égypte), s'est formé au cours Florent et à l'ENSATT.</p>
 
-        Il débute au cinéma en 1981 avec Alexandre Arcady, avant de se faire connaître comme inspecteur Barrada 
-        dans la série Navarro (1989-1995). 
+      <p>Il débute au cinéma en 1981 avec Alexandre Arcady, avant de se faire connaître comme inspecteur Barrada 
+      dans la série Navarro (1989-1995). </p>
         
-        Au cinéma, il marque les esprits avec Cuisine et Dépendances et La Cité de la peur. 
+      <p>Au cinéma, il marque les esprits avec Cuisine et Dépendances et La Cité de la peur. </p>
         
-        Réalisateur primé, il signe notamment le court-métrage Omnibus (Palme d'Or 1992, Oscar 1993) et des 
-        films comme Kennedy et moi. 
+      <p>Réalisateur primé, il signe notamment le court-métrage Omnibus (Palme d'Or 1992, Oscar 1993) et des 
+        films comme Kennedy et moi. </p>
         
-        En 2018, il joue dans Le Garçon du dernier rang avec son fils Martin, et publie en 2021 Conversations du bout 
+      <p>En 2018, il joue dans Le Garçon du dernier rang avec son fils Martin, et publie en 2021 Conversations du bout 
         du Monde, relatant le Vendée Globe de Damien Seguin.</p>
     </section>
 
     <footer>
-      <a href="index.html">
-          <img src="assets/icons/logo64.svg" alt="Logo du festival">
-      </a>
-      <p>Festival "Ça va trai'ler"</p>
+      <h3> <a href="index.html"><img src="assets/icons/logo64.svg" alt="Logo du festival"></a>
+      Festival "Ça va trai'ler"</h3>
+      
       <nav>
         <h4>Menu</h4>
         <ul>
-          <li><a href="mentions.html"> Mentions légales </a></li>
-          <li><a href="contact/html"> Contacts & accès </a></li>
+          <li><a href="mentions_legales.html"> Mentions légales </a></li>
+          <li><a href="page_contact.html"> Contacts & accès </a></li>
         </ul>
       </nav>
-      <p>Contact
-          90000 Belfort 01 23 45 67 89 contact@festival-trailer.fr</p>
-      <p>Nous suivre
-        <ul>
+      <h5>Contact</h5>
+          90000 Belfort <address><a href="tel:+33637055454">06 37 05 54 54</a></address> <address><a href="mailto:contact@festival-trailer.fr">contact@festival-trailer.fr</a></address>
+      <h5>Nous suivre</h5>
+        <ul aria-label="Suivez-nous sur les réseaux sociaux">
           <li><a href="#"><img src="assets/icons/instagram.svg" alt="Logo Instagram"></a></li>
           <li><a href="#"><img src="assets/icons/youtube.svg" alt="Logo Youtube"></a></li>
           <li><a href="#"><img src="assets/icons/twitter.svg" alt="Logo Twitter"></a></li>
           <li><a href="#"><img src="assets/icons/facebook.svg" alt="Logo Facebook"></a></li>
           <li><a href="#"><img src="assets/icons/tiktok.svg" alt="Logo Tiktok"></a></li>
         </ul>
-      </p>
   </footer>
   
+
 </body>
 </html>

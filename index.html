@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,7 +25,7 @@
   <script type="module" src="/src/js/script.js"></script>
 </head>
 
-<body>
+<body id="page_accueil">
     <header>
         <a href="index.html"><img src="assets/icons/logo64.svg" alt="Logo"></a>
         <img src="assets/img/page_accueil_festival.webp" alt="Entête">
@@ -34,8 +34,9 @@
         class="header__menu-btn menu-btn"
         aria-label="menu"
         aria-expanded="false"
-        aria-controls="mainNav"
-      >
+        aria-controls="mainNav">
+    </button>
+
 
       <nav class="header__menu menu" id="mainNav" aria-hidden="true">
         <ul class="menu__list list-unstyled">
@@ -87,7 +88,6 @@
         </div>
       </nav>
         <span class="menu-btn__bar" aria-hidden="true"></span>
-      </button>
     </header>
 
     <section>
@@ -98,14 +98,15 @@
 
     <section>
         <h2>Découvrez l'alliance du cinéma et du sport</h2>
-        <p>Un festival unique proposant <strong>une expérience inédite</strong> où le sport et le cinéma se rencontrent pour célébrer l’effort physique et la créativité artistique.
-
-            Que vous soyez passionné de courses ou cinéphile averti, cet événement vous offre des projections de courts-métrages, entrecoupées d’activités physiques accessibles à tous. 
-            De trails en pleine nature à la découverte de films qui capturent l’esprit de compétition et de dépassement de soi, ce festival allie dynamisme, convivialité et inspiration. 
-            
-            Rejoignez-nous pour vivre des moments forts, alliant adrénaline et émotions, au cœur d’un cadre naturel exceptionnel.</p>
-        <a href="programmation.html" class>Programme</a>
-        <a href="billetterie.html" class>Billetterie</a>
+        <p>Un festival unique proposant <strong>une expérience inédite</strong> où le sport et le cinéma se rencontrent pour 
+          célébrer l’effort physique et la créativité artistique.</p>
+        <p>Que vous soyez passionné de courses ou cinéphile averti, cet événement vous offre des projections de courts-métrages, 
+          entrecoupées d’activités physiques accessibles à tous. </p>
+        <p>De trails en pleine nature à la découverte de films qui capturent l’esprit de compétition et de dépassement de soi, 
+          ce festival allie dynamisme, convivialité et inspiration. </p>
+        <p>Rejoignez-nous pour vivre des moments forts, alliant adrénaline et émotions, au cœur d’un cadre naturel exceptionnel.</p>  
+        <a href="programmation.html">Programme</a>
+        <a href="billeterie.html">Billetterie</a>
     </section>
 
     <section>
@@ -115,57 +116,67 @@
 
     <section>
         <h1>"Ça va Trai'ler", c'est :</h1>
-        <div>Un festival unique dans son genre</div>
-        <div>Un accès pour tous, et complètement gratuit</div>
-        <div>Une semaine complète, au début du printemps</div>
-        <div>Une participation active du public</div>
+        <ul>
+          <li><h3><a href="festival.html">Un festival unique dans son genre</a></h3></li>
+          <li><h3><a href="infos_pratiques.html">Un accès pour tous, et complètement gratuit</a></h3></li>
+          <li><h3><a href="programmation.html">Une semaine complète, au début du printemps</a></h3></li>
+          <li><h3><a href="liste_invites.html">Une participation active du public</a></h3></li>
+        </ul>
     </section>
 
-    <section>
-        <h2>Plus d'articles</h2>
-        <div>LE PROGRAMME</div>  
-        <div>LES FILMS</div>
-        <div>LES INVITÉS</div>
-    </section>
+
+    <div>
+      <details>
+        <summary><a href="programmation.html">LE PROGRAMME</a></summary>
+        <h4>Découvrez le programme complet du festival "Ça va trai'ler" !</h4>
+      </details>
+      <details>
+        <summary><a href="liste_films.html">LES FILMS</a></summary>
+        <h4>Découvrez la liste des films en compétition pour le festival "Ça va trai'ler" !</h4>
+      </details>
+      <details>
+        <summary><a href="liste_invites.html">LES INVITÉS</a></summary>
+        <h4>Découvrez la liste des invités du festival "Ça va trai'ler" !</h4>
+      </details>
+      </div>
 
     <section>
-        <div>Infos pratiques</div>
+        <h2>Infos pratiques</h2>
     </section>
 
     <section>
         <h2>Nos partenaires</h2>
-        <div>
-            <img src="/assets//img/decathlon.webp" alt="Decathlon">
-            <img src="/assets/img/ISFF.webp" alt="Festival Clermont Court">
-            <img src="/assets/img/logo-vectoriel-ville-de-belfort.webp" alt="Ville de Belfort">
-            <img src="/assets/img/est_republicain.webp" alt="L'Est Républicain">
-        </div>
+        <ul>
+            <li><img src="/assets/img/decathlon.webp" alt="Decathlon"></li>
+            <li><img src="/assets/img/ISFF.webp" alt="Festival Clermont Court"></li>
+            <li><img src="/assets/img/logo-vectoriel-ville-de-belfort.webp" alt="Ville de Belfort"></li>
+            <li><img src="/assets/img/est_republicain.webp" alt="L'Est Républicain"></li>
+        </ul>
     </section>
 
     <footer>
-        <a href="index.html">
-            <img src="assets/icons/logo64.svg" alt="Logo du festival">
-        </a>
-        <p>Festival "Ça va trai'ler"</p>
-        <nav>
-          <h4>Menu</h4>
-          <ul>
-            <li><a href="mentions.html"> Mentions légales </a></li>
-            <li><a href="contact/html"> Contacts & accès </a></li>
-          </ul>
-        </nav>
-        <p>Contact
-            90000 Belfort 01 23 45 67 89 contact@festival-trailer.fr</p>
-        <p>Nous suivre
-          <ul>
-            <li><a href="#"><img src="assets/icons/instagram.svg" alt="Logo Instagram"></a></li>
-            <li><a href="#"><img src="assets/icons/youtube.svg" alt="Logo Youtube"></a></li>
-            <li><a href="#"><img src="assets/icons/twitter.svg" alt="Logo Twitter"></a></li>
-            <li><a href="#"><img src="assets/icons/facebook.svg" alt="Logo Facebook"></a></li>
-            <li><a href="#"><img src="assets/icons/tiktok.svg" alt="Logo Tiktok"></a></li>
-          </ul>
-        </p>
-    </footer>
+      <h3> <a href="index.html"><img src="assets/icons/logo64.svg" alt="Logo du festival"></a>
+      Festival "Ça va trai'ler"</h3>
+      
+      <nav>
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="mentions_legales.html"> Mentions légales </a></li>
+          <li><a href="page_contact.html"> Contacts & accès </a></li>
+        </ul>
+      </nav>
+      <h5>Contact</h5>
+          90000 Belfort <address><a href="tel:+33637055454">06 37 05 54 54</a></address> <address><a href="mailto:contact@festival-trailer.fr">contact@festival-trailer.fr</a></address>
+      <h5>Nous suivre</h5>
+        <ul aria-label="Suivez-nous sur les réseaux sociaux">
+          <li><a href="#"><img src="assets/icons/instagram.svg" alt="Logo Instagram"></a></li>
+          <li><a href="#"><img src="assets/icons/youtube.svg" alt="Logo Youtube"></a></li>
+          <li><a href="#"><img src="assets/icons/twitter.svg" alt="Logo Twitter"></a></li>
+          <li><a href="#"><img src="assets/icons/facebook.svg" alt="Logo Facebook"></a></li>
+          <li><a href="#"><img src="assets/icons/tiktok.svg" alt="Logo Tiktok"></a></li>
+        </ul>
+  </footer>
+  
   
 </body>
 </html>

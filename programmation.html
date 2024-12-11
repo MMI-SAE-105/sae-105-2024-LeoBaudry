@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,149 +25,146 @@
   <script type="module" src="/src/js/script.js"></script>
 </head>
 
-<body>
-    <header>
-        <a href="index.html"><img src="assets/icons/logo64.svg" alt="Logo"></a>
-        <img src="assets/img/page_programme.webp" alt="Entête">
+<body id="page_programmation">
+  <header>
+    <a href="index.html"><img src="assets/icons/logo64.svg" alt="Logo"></a>
+    <img src="assets/img/page_invites.webp" alt="Entête">
 
-        <button
-        class="header__menu-btn menu-btn"
-        aria-label="menu"
-        aria-expanded="false"
-        aria-controls="mainNav"
+    <button
+    class="header__menu-btn menu-btn"
+    aria-label="menu"
+    aria-expanded="false"
+    aria-controls="mainNav">
+</button>
+
+
+  <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+    <ul class="menu__list list-unstyled">
+      <li class="menu__item">
+        <a class="menu__link" href="festival.html">Festival</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="programmation.html">Programmation</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="liste_films.html">Liste des films</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="liste_invites.html">Liste des invités</a>
+      </li>
+    </ul>
+    <div class="menu__secondaire">
+      <ul
+        class="menu__social-network list-unstyled"
+        aria-label="Social media"
       >
+        <li>
+          <a href="#" aria-label="Visitez notre profil Instagram"
+            ><img src="/assets/icons/instagram.svg" alt="Icone Instagram"
+          /></a>
+        </li>
+        <li>
+          <a href="#" aria-label="Visitez notre profil Youtube"
+            ><img src="/assets/icons/youtube.svg" alt="Icone Youtube"
+          /></a>
+        </li>
+        <li>
+          <a href="#" aria-label="Visitez notre profil Twitter"
+            ><img src="/assets/icons/twitter.svg" alt="Icone Twitter"
+          /></a>
+        </li>
+      </ul>
+      <ul class="menu__terms list-unstyled" aria-label="Legal information">
+        <li>
+          <a class="menu__link menu__link--silent"
+            href="infos_pratiques.html">Infos Pratiques</a>
+            
+        </li>
+        <li>
+          <a class="menu__link menu__link--silent"
+            href="page_contact.html">Page contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <span class="menu-btn__bar" aria-hidden="true"></span>
+</header>
 
-      <nav class="header__menu menu" id="mainNav" aria-hidden="true">
-        <ul class="menu__list list-unstyled">
-          <li class="menu__item">
-            <a class="menu__link" href="festival.html">Festival</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="programmation.html">Programmation</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="liste_films.html">Liste des films</a>
-          </li>
-          <li class="menu__item">
-            <a class="menu__link" href="liste_invites.html">Liste des invités</a>
-          </li>
-        </ul>
-        <div class="menu__secondaire">
-          <ul
-            class="menu__social-network list-unstyled"
-            aria-label="Social media"
-          >
-            <li>
-              <a href="#" aria-label="Visitez notre profil Instagram"
-                ><img src="/assets/icons/instagram.svg" alt="Icone Instagram"
-              /></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Visitez notre profil Youtube"
-                ><img src="/assets/icons/youtube.svg" alt="Icone Youtube"
-              /></a>
-            </li>
-            <li>
-              <a href="#" aria-label="Visitez notre profil Twitter"
-                ><img src="/assets/icons/twitter.svg" alt="Icone Twitter"
-              /></a>
-            </li>
-          </ul>
-          <ul class="menu__terms list-unstyled" aria-label="Legal information">
-            <li>
-              <a class="menu__link menu__link--silent"
-                href="infos_pratiques.html">Infos Pratiques</a>
-                
-            </li>
-            <li>
-              <a class="menu__link menu__link--silent"
-                href="page_contact.html">Page contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-        <span class="menu-btn__bar" aria-hidden="true"></span>
-      </button>
-    </header>
-
-    <section>
-        <h1>Programme</h1>
-    </section>
-    
+    <h1>Programme</h1>
     <section>
         <h2>Programme par journée</h2>
         <p>Toutes les projections se font en extérieur</p>
-    </section>
-
+    
     <section>
         <h3> Mardi 15/04  : Projection d'ouverture et ateliers de rencontre avec des réalisateurs. </h3>
-        <ul>
-            <li>10h00 – Projection d'ouverture : "Omnibus" </li>
-            <li>11h00 – Atelier de rencontre avec les réalisateurs </li>
-            <li>13h00 – Projection : "Mr Hublot" </li>
-            <li>15h00 – Course d'ouverture : Trail en plein air (5 km) </li>
-            <li>17h00 – Projection : "Logorama©" </li>
-        </ul>
+          <ul>
+              <li>10h00 - Projection d'ouverture : "Omnibus" </li>
+              <li>11h00 - Atelier de rencontre avec les réalisateurs </li>
+              <li>13h00 - Projection : "Mr Hublot" </li>
+              <li>15h00 - Course d'ouverture : Trail en plein air (5 km) </li>
+              <li>17h00 - Projection : "Logorama©" </li>
+          </ul>
     </section>
 
     <section>
         <h3> Mercredi 16/04 : Courses sportives en plein air + projections thématiques. </h3>
-        <ul>
-            <li>09h00 – Séance de Yoga en plein air </li>
-            <li>11h00 – Projection thématique : "Le Mozart des pickpockets" </li>
-            <li>13h00 – Re-projection : "Omnibus" </li>
-            <li>15h00 – Course à pied en plein air (7 km) </li>
-            <li>17h00 – Projection : "Le Poulet” </li>
-        </ul>
+          <ul>
+              <li>09h00 - Séance de Yoga en plein air </li>
+              <li>11h00 - Projection thématique : "Le Mozart des pickpockets" </li>
+              <li>13h00 - Re-projection : "Omnibus" </li>
+              <li>15h00 - Course à pied en plein air (7 km) </li>
+              <li>17h00 - Projection : "Le Poulet” </li>
+          </ul>
     </section>
 
     <section>
         <h3> Jeudi 17/04 : Conférences sur le cinéma et le sport + démonstrations sportives. </h3>
-        <ul>
-            <li>10h00 – Conférence : Le cinéma à l'ère numérique </li>
-            <li>11h30 – Projection : "La rivière du hibou” </li>
-            <li>14h00 – Démonstrations sportives : Initiation au trail </li>
-            <li>16h00 – Projection : "Heureux Anniversaire" </li>
-            <li>18h00 – Projection : "Histoire d’un poisson rouge" </li>
-        </ul>
+          <ul>
+              <li>10h00 - Conférence : Le cinéma à l'ère numérique </li>
+              <li>11h30 - Projection : "La rivière du hibou” </li>
+              <li>14h00 - Démonstrations sportives : Initiation au trail </li>
+              <li>16h00 - Projection : "Heureux Anniversaire" </li>
+              <li>18h00 - Projection : "Histoire d’un poisson rouge" </li>
+          </ul>
     </section>
 
     <section>
         <h3> Vendredi 18/04 : Projections de films en compétition + activités sportives participatives. </h3>
-        <ul>
-            <li>09h30 – Projection de films en compétition : "Un jour comme un autre" </li>
-            <li>11h00 – Projection : "La Jetée” </li>
-            <li>14h00 – Activité sportive participative : Relais en équipe </li>
-            <li>16h30 – Projection de films en compétition : "Le voyage dans la Lune" </li>
-            <li>18h00 – Projection de films en compétition : "Vincent" </li>
-        </ul>
+          <ul>
+              <li>09h30 - Projection de films en compétition : "Un jour comme un autre" </li>
+              <li>11h00 - Projection : "La Jetée” </li>
+              <li>14h00 - Activité sportive participative : Relais en équipe </li>
+              <li>16h30 - Projection de films en compétition : "Le voyage dans la Lune" </li>
+              <li>18h00 - Projection de films en compétition : "Vincent" </li>
+          </ul>
     </section>
 
     <section>
         <h3> Samedi 19/04 : Remise de prix et soirée festive. </h3>
-        <ul>
-            <li>10h00 – Projection spéciale : “Emilie Muller </li>
-            <li>14h00 – Remise des prix du festival </li>
-            <li>19h30 – Soirée festive et projection en plein air </li>
-        </ul>
+          <ul>
+              <li>10h00 - Projection spéciale : “Emilie Muller </li>
+              <li>14h00 - Remise des prix du festival </li>
+              <li>19h30 - Soirée festive et projection en plein air </li>
+          </ul>
     </section>
 
     <section>
         <h3> Dimanche 20/04 : Clôture du festival </h3>
-        <ul>
-            <li>09h00 – Marche solidaire </li>
-            <li>11h30 – Projection de clôture : "L’accordeur” </li>
-            <li>14h00 – Cérémonie de clôture : derniers échanges et remerciements à tous les participants et organisateurs. </li>
-        </ul>
+          <ul>
+              <li>09h00 - Marche solidaire </li>
+              <li>11h30 - Projection de clôture : "L’accordeur” </li>
+              <li>14h00 - Cérémonie de clôture : derniers échanges et remerciements à tous les participants et organisateurs. </li>
+          </ul>
     </section>
 
     <section>
         <h3> Lundi 21/04 : Activités libres </h3>
-        <ul>
-            <li>10h00 – Activités libres : Randonnée ou course amicale </li>
-            <li>17h00 - Fin du festival </li>
-        </ul>
-    </section>
+          <ul>
+              <li>10h00 - Activités libres : Randonnée ou course amicale </li>
+              <li>17h00 - Fin du festival </li>
+          </ul>
+    </section>  
+  </section>
 
     <section>
         <a href="assets/docs/programme_evenement_trai'ler.pdf" download="programme_evenement_trai'ler.pdf">Télécharger le programme 
@@ -176,31 +173,40 @@
 
     <section>
         <h2>Rencontres</h2>
-        <p>Rencontre avec les créateurs primés : L'art du court-métrage.
-        Invité : Sam Karmann (Omnibus). Réalisateur récompensé par l'Oscar et la Palme d'Or, qui partagera son expérience de la 
+        <h4>Rencontre avec les créateurs primés : L'art du court-métrage.</h4>
+        <h5>Invité : Sam Karmann (Omnibus). </h5>
+        <p>
+        Réalisateur récompensé par l'Oscar et la Palme d'Or, qui partagera son expérience de la 
         réalisation d'un court-métrage marquant et son regard sur l'évolution du format court.
         </p>
 
-        <p>L'animation comme outil de narration et de satire.
-        Invités : Laurent Witz et Alexandre Espigares (Mr Hublot), lauréats de l'Oscar pour leur œuvre poétique et futuriste.
+        <h4>L'animation comme outil de narration et de satire.</h4>
+        <h5>Invités : Laurent Witz et Alexandre Espigares (Mr Hublot)</h5>
+        <p>
+        Lauréats de l'Oscar pour leur œuvre poétique et futuriste.
         François Alaux, Hervé de Crécy et Ludovic Houplain (Logorama), réalisateurs de cette satire visuelle acclamée qui explore 
         le pouvoir des marques.
         </p>
 
-        <p>Hommage aux classiques intemporels.
-        Focus sur les œuvres qui ont façonné le genre :
+        <h4><strong>Hommage aux classiques intemporels.</strong></h4>
+        <h5><em>Focus sur les œuvres qui ont façonné le genre :</em></h5>
+        <p>
         La Jetée, réalisé par Chris Marker, un chef-d’œuvre visionnaire en science-fiction.
-
+        </p>
+        
+        <p>
         Le Voyage dans la Lune, de Georges Méliès, pionnier du cinéma.
         La Rivière du Hibou, adapté par Robert Enrico, et Le Poulet de Claude Berri, qui ont marqué les débuts du cinéma français.    
         </p>
 
-        <p>Session interactive : Questions au public.
+        <h4>Session interactive : Questions au public.</h4>
+        <p>
         Les réalisateurs discuteront des défis de production, du financement des courts-métrages, et de leur vision artistique 
         tout en répondant aux questions des spectateurs.
         </p>
 
-        <p>Atelier découverte.
+        <h4>Atelier découverte.</h4>
+        <p>
         Conférence “Créer un court-métrage inspiré des maîtres", animé par un expert du genre, permettra aux participants de 
         se familiariser avec les techniques de mise en scène et de storytelling.
         </p>
@@ -208,33 +214,34 @@
 
     <section>
         <h2>Précisions</h2>
-        <p>Le festival se déroulera du 15 au 21 avril 2025. </p>
+        <h3>Le festival se déroulera du 15 au 21 avril 2025. </h3>
 
-        <p>Projections de courts-métrages :
+        <h4>Projections de courts-métrages :</h4>
+        <p>
         Chaque soir, assistez à une sélection de courts-métrages inspirants, soigneusement sélectionnés par des professionnels 
         ainsi que de nouveaux exposants. Les projections auront lieu en plein air dans un cadre naturel exceptionnel.
         </p>
 
-        <p>Sessions sportives :
+        <h4>Sessions sportives :</h4>
+        <p>
         Participez à des activités sportives ouvertes à tous, quel que soit votre niveau. Courses, randonnées, séances de 
         fitness et autres challenges seront au programme pour vous faire bouger dans une ambiance conviviale.
         </p>
 
-        <p> Ateliers interactifs :
+        <h4> Ateliers interactifs :</h4>
+        <p>
         Découvrez les coulisses du cinéma à travers des ateliers immersifs, apprenez à tourner vos propres mini-courts-métrages, 
         ou initiez-vous à la création de contenus en réalité virtuelle.
         </p>
-    </section>
-
-    <section>
+        
         <a href="liste_films.html">Découvrez les films</a>
     </section>
 
     <section>
         <h2>Informations pratiques</h2>
-        <p>Toutes les activités sont gratuites et accessibles à tous. 
-        Apporter des vêtements confortables et adaptés aux activités physiques est recommandé.  
-        Des équipements spécifiques seront également disponibles sur place.</p>
+        <p>Toutes les activités sont gratuites et accessibles à tous.</p>
+        <p>Apporter des vêtements confortables et adaptés aux activités physiques est recommandé.  </p>
+        <p>Des équipements spécifiques seront également disponibles sur place.</p>
     </section>
 
     <section>
@@ -243,29 +250,28 @@
     </section>
 
     <footer>
-        <a href="index.html">
-            <img src="assets/icons/logo64.svg" alt="Logo du festival">
-        </a>
-        <p>Festival "Ça va trai'ler"</p>
-        <nav>
-          <h4>Menu</h4>
-          <ul>
-            <li><a href="mentions.html"> Mentions légales </a></li>
-            <li><a href="contact/html"> Contacts & accès </a></li>
-          </ul>
-        </nav>
-        <p>Contact
-            90000 Belfort 01 23 45 67 89 contact@festival-trailer.fr</p>
-        <p>Nous suivre
-          <ul>
-            <li><a href="#"><img src="assets/icons/instagram.svg" alt="Logo Instagram"></a></li>
-            <li><a href="#"><img src="assets/icons/youtube.svg" alt="Logo Youtube"></a></li>
-            <li><a href="#"><img src="assets/icons/twitter.svg" alt="Logo Twitter"></a></li>
-            <li><a href="#"><img src="assets/icons/facebook.svg" alt="Logo Facebook"></a></li>
-            <li><a href="#"><img src="assets/icons/tiktok.svg" alt="Logo Tiktok"></a></li>
-          </ul>
-        </p>
-    </footer>
+      <h3> <a href="index.html"><img src="assets/icons/logo64.svg" alt="Logo du festival"></a>
+      Festival "Ça va trai'ler"</h3>
+      
+      <nav>
+        <h4>Menu</h4>
+        <ul>
+          <li><a href="mentions_legales.html"> Mentions légales </a></li>
+          <li><a href="page_contact.html"> Contacts & accès </a></li>
+        </ul>
+      </nav>
+      <h5>Contact</h5>
+          90000 Belfort <address><a href="tel:+33637055454">06 37 05 54 54</a></address> <address><a href="mailto:contact@festival-trailer.fr">contact@festival-trailer.fr</a></address>
+      <h5>Nous suivre</h5>
+        <ul aria-label="Suivez-nous sur les réseaux sociaux">
+          <li><a href="#"><img src="assets/icons/instagram.svg" alt="Logo Instagram"></a></li>
+          <li><a href="#"><img src="assets/icons/youtube.svg" alt="Logo Youtube"></a></li>
+          <li><a href="#"><img src="assets/icons/twitter.svg" alt="Logo Twitter"></a></li>
+          <li><a href="#"><img src="assets/icons/facebook.svg" alt="Logo Facebook"></a></li>
+          <li><a href="#"><img src="assets/icons/tiktok.svg" alt="Logo Tiktok"></a></li>
+        </ul>
+  </footer>
+  
 
 </body>
 </html>
