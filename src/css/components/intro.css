@@ -1,0 +1,46 @@
+.intro__title {
+    margin-top: -9rem;
+    text-align: center;
+}
+
+.intro__text { 
+    font-size: var(--tt-b2);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.intro__link {
+    display: inline-flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 150px; 
+    height: 50px; 
+    padding: 0.5rem; 
+    font-size: var(--tt-b2); 
+    font-family: var(--font-sans-serif-Mulish);
+    font-weight: 600;
+    color: var(--grey-noir);
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: all 0.3s ease; 
+    text-align: center;
+}
+
+.intro__link--program {
+    background-color: var(--transparent-transparent);
+    border: 2px solid var(--grey-noir);
+}
+
+
+.intro__link--tickets {
+    background-color: var(--main-colors-rouge-1); 
+    border:none;
+}
+
+.intro__links-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 1rem; 
+    margin-top: 2rem; 
+}
