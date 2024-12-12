@@ -80,44 +80,78 @@
 </nav>
 </header>
 
-      <h1>Présentation de l'invité</h1>
+<section class="hero intro">
+  <img src="assets/img/page_presentation_invites.webp" alt="Entête" class="hero__background">
+  <h1 class="hero__title">Présentation de l'invité</h1>
+</section>  
   
-    <section>
-      <h2>Présentation de Sam KARMANN</h2>
+  <h2 class="intro__title">Présentation de Sam KARMANN</h2>
   
-      <img src="assets/img/Invite_Sam_Karmann.webp" alt="Photo de Sam KARMANN">
-  
-      <h2>Biographie</h2>
-      <p><em>Sam Karmann</em>, né à Port-Saïd (Égypte), s'est formé au cours Florent et à l'ENSATT.</p>
 
-      <p>Il débute au cinéma en 1981 avec <em>Alexandre Arcady</em>, avant de se faire connaître comme inspecteur Barrada dans la série 
+  
+    <section class="text">
+      <img class="text__img" src="assets/img/Invite_Sam_Karmann.webp" alt="Photo de Sam KARMANN">
+  
+      <hr class="separator">
+
+      <h2 class="text__title">Biographie</h2>
+      <p class="text__texts"><em>Sam Karmann</em>, né à Port-Saïd (Égypte), s'est formé au cours Florent et à l'ENSATT.</p>
+
+      <p class="text__texts">Il débute au cinéma en 1981 avec <em>Alexandre Arcady</em>, avant de se faire connaître comme inspecteur Barrada dans la série 
       Navarro (1989-1995). </p>
         
-      <p>Au cinéma, il marque les esprits avec <em>Cuisine et Dépendances</em> et <em>La Cité de la peur</em>. </p>
+      <p class="text__texts">Au cinéma, il marque les esprits avec <em>Cuisine et Dépendances</em> et <em>La Cité de la peur</em>. </p>
         
-      <p>Réalisateur primé, il signe notamment le court-métrage <strong>Omnibus</strong> (Palme d'Or 1992, Oscar 1993) et des 
+      <p class="text__texts">Réalisateur primé, il signe notamment le court-métrage <strong>Omnibus</strong> (Palme d'Or 1992, Oscar 1993) et des 
       films comme <em>Kennedy et moi</em>. </p>
         
-      <p>En 2018, il joue dans <em>Le Garçon du dernier rang</em> avec son fils Martin, et publie en 2021 <em>Conversations du bout du 
+      <p class="text__texts">En 2018, il joue dans <em>Le Garçon du dernier rang</em> avec son fils Martin, et publie en 2021 <em>Conversations du bout du 
         Monde</em>, relatant le Vendée Globe de <strong>Damien Seguin</strong>.</p>
     </section>
 
-    <section>
-      <h2>Apparitions</h2>
-      <p><strong>Réalisateur</strong> du court-métrage  “<em>Omnibus</em>”.</p>
-      <p>Rencontre durant le festival.</p>
+    <hr class="separator">
+
+    <section class="text">
+      <h2 class="text__title">Apparitions</h2>
+      <p class="text__texts"><strong>Réalisateur</strong> du court-métrage  “<em>Omnibus</em>”.</p>
+      <p class="text__texts">Rencontre durant le festival.</p>
     </section>
 
-    <section>
-      <div>
-          <h2>Carousel d'images de Sam KARMANN</h2>
-          <div><img src="/assets/img/Invite_Sam_Karmann.webp" alt="Photo1"></div>
-          <div><img src="/assets/img/Invite_Sam_Karmann2.webp" alt="Photo2"></div>
-          <div><img src="/assets/img/Invite_Sam_Karmann3.webp" alt="Photo3"></div>
-          <div><img src="/assets/img/Invite_Sam_Karmann4.webp" alt="Photo4"></div>
-          <div><img src="/assets/img/Invite_Sam_Karmann5.webp" alt="Photo5"></div>
+    <hr class="separator">
+
+    <div class="carousel" aria-labelledby="carousel-heading">
+      <h2 id="carousel-heading" class="carousel__heading sr-only">
+          Carousel d'images de Sam KARMANN
+      </h2>
+      <div class="carousel__container" role="region" aria-live="polite">
+          <div class="carousel__item">
+              <img src="assets/img/Invite_Sam_Karmann.webp" alt="Sam KARMANN" id="item1"/>
+          </div>
+          <div class="carousel__item">
+              <img src="assets/img/Invite_Sam_Karmann3.webp" alt="Sam KARMANN" id="item3"/>
+          </div>
+          <div class="carousel__item">
+              <img src="assets/img/Invite_Sam_Karmann5.webp" alt="Sam KARMANN" id="item5"/>
+          </div>
       </div>
-    </section>
+      <div class="carousel__controls">
+          <button class="carousel__button carousel__button--prev" aria-label="Défiler vers la gauche">
+              <img src="/assets/icons/fleche_carousel.svg" alt="fleche gauche" />
+          </button>
+          <button class="carousel__button carousel__button--next" aria-label="Défiler vers la droite">
+              <img src="/assets/icons/fleche_carousel.svg" alt="fleche droite" />
+          </button>
+      </div>
+      <nav class="carousel__nav">
+        <ul class="carousel__nav-list">
+            <li class="carousel__nav-item"><a href="#item1">Image 1</a></li>
+            <li class="carousel__nav-item"><a href="#item3">Image 2</a></li>
+            <li class="carousel__nav-item"><a href="#item5">Image 3</a></li>
+        </ul>
+    </nav>
+  </div>
+
+    <hr class="separator">
 
     <footer class="footer">
       <div class="footer__header">

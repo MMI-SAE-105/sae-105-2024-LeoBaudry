@@ -3,7 +3,12 @@
     max-height: 100%;
     border-radius: 8px;
 }
-
+.card__title {
+    
+    font-size: var(--tt-h2);
+    font-weight: 700;
+    color: var(--grey-noir);
+}
 .card__presentation {
     text-align: left;
     padding-left: 50px;

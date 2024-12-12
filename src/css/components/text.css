@@ -35,3 +35,20 @@
     margin: 0;
     size: fill;
 }
+
+.text__img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+.text__bouton {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--grey-noir);
+    border: 1px solid var(--grey-noir);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 20px 10px;
+    font-size: 16px;
+}
