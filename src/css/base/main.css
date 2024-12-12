@@ -57,9 +57,3 @@ textarea {
     overflow: hidden;
   }
   
-  .highlight {
-    background-color: var(--primary);
-    padding: 4px var(--space1x);
-    font-weight: 500;
-  }
-  
