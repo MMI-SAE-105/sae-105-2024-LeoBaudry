@@ -11,6 +11,7 @@
 @import "utils/variables.css";
 
 /* Base */
+@import "base/main.css";
 
 /* Layout */
 
@@ -20,8 +21,3 @@
 
 
 
-
-body  {
-    background-color: #FFFAE1;
-
-}

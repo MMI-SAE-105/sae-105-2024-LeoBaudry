@@ -44,10 +44,10 @@
 
     /* Familles des typos */
 
-    --font-sans-serif-one: "Mulish", sans-serif;
-    --font-sans-serif-two: "Poppins", sans-serif;
-    --font-sans-serif-three: "DM Sans", sans-serif;
-    --font-sans-serif-four: "Inter", sans-serif;
+    --font-sans-serif-Mulish: "Mulish", sans-serif;
+    --font-sans-serif-Popping: "Poppins", sans-serif;
+    --font-sans-serif-DM_Sans: "DM Sans", sans-serif;
+    --font-sans-serif-Inter: "Inter", sans-serif;
 
       /* Espaces */
   --space1x: 10px;

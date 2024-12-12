@@ -1,0 +1,7 @@
+body {
+    font-family: var(--font-sans-serif-Mulish);
+    font-size: var(--tt-bu);
+    line-height: 1.6;
+    background-color: var(--main-colors-beige-1);
+    font-weight: 375;
+}
