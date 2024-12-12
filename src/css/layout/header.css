@@ -25,5 +25,6 @@
   color: var(--grey-blanc);
   font-size: var(--tt-h3);
   margin-right: var(--space2x);
+  font-family: var(--font-sans-serif-DM_Sans);
 }
 
