@@ -26,221 +26,249 @@
 </head>
 
 <body id="page_programmation">
-  <header class = header>
-    <a href="index.html" class="header__link"><img src="assets/icons/logo64.svg" alt="Logo" class="header__logo"></a>
+  <header class="header">
+    <a href="index.html" class="header__link">
+        <img src="assets/icons/logo64.svg" alt="Logo" class="header__logo">
+    </a>
     <h2 class="header__name">Ça va Trai'ler</h2>
-
-    <button
-    class="header__menu-btn menu-btn"
-    aria-label="menu"
-    aria-expanded="false"
-    aria-controls="mainNav">
-    <span class="menu-btn__bar" aria-hidden="true"></span>
-</button>
-
-
-<nav class="header__menu menu" id="mainNav" aria-hidden="true">
-  <img src="assets/img/Menu-top.svg" alt="" class="menu__shape menu__shape--top" aria-hidden="true">
-  <ul class="menu__list list-unstyled">
-    <li class="menu__item">
-      <a class="menu__link" href="festival.html">Festival</a>
-    </li>
-    <li class="menu__item">
-      <a class="menu__link" href="programmation.html">Programmation</a>
-    </li>
-    <li class="menu__item">
-      <a class="menu__link" href="liste_films.html">Liste des films</a>
-    </li>
-    <li class="menu__item">
-      <a class="menu__link" href="liste_invites.html">Liste des invités</a>
-    </li>
-  </ul>
-  <div class="menu__secondaire">
-    <ul class="menu__terms list-unstyled" aria-label="Legal information">
-      <li>
-        <a class="menu__link menu__link--silent" href="infos_pratiques.html">Infos Pratiques</a>
-      </li>
-      <li>
-        <a class="menu__link menu__link--silent" href="page_contact.html">Page contact</a>
-      </li>
-    </ul>
-    <ul class="menu__social-network list-unstyled" aria-label="Social media">
-      <li>
-        <a href="#" aria-label="Visitez notre profil Instagram"><img src="/assets/icons/instagram.svg" alt="Icone Instagram"></a>
-      </li>
-      <li>
-        <a href="#" aria-label="Visitez notre profil Youtube"><img src="/assets/icons/youtube.svg" alt="Icone Youtube"></a>
-      </li>
-      <li>
-        <a href="#" aria-label="Visitez notre profil Twitter"><img src="/assets/icons/twitter.svg" alt="Icone Twitter"></a>
-      </li>
-    </ul>
-  </div>
-  <img src="assets/img/Menu-bot.svg" alt="" class="menu__shape menu__shape--bottom" aria-hidden="true">
-</nav>
+    <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav">
+        <span class="menu-btn__bar" aria-hidden="true"></span>
+    </button>
+    <nav class="header__menu menu" id="mainNav" aria-hidden="true">
+        <img src="assets/img/Menu-top.svg" alt="" class="menu__shape menu__shape--top" aria-hidden="true">
+        <ul class="menu__list list-unstyled">
+            <li class="menu__item">
+                <a class="menu__link" href="festival.html">Festival</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="programmation.html">Programmation</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="liste_films.html">Liste des films</a>
+            </li>
+            <li class="menu__item">
+                <a class="menu__link" href="liste_invites.html">Liste des invités</a>
+            </li>
+        </ul>
+        <div class="menu__secondaire">
+            <ul class="menu__terms list-unstyled" aria-label="Legal information">
+                <li>
+                    <a class="menu__link menu__link--silent" href="infos_pratiques.html">Infos Pratiques</a>
+                </li>
+                <li>
+                    <a class="menu__link menu__link--silent" href="page_contact.html">Page contact</a>
+                </li>
+            </ul>
+            <ul class="menu__social-network list-unstyled" aria-label="Social media">
+                <li>
+                    <a href="#" aria-label="Visitez notre profil Instagram">
+                        <img src="/assets/icons/instagram.svg" alt="Icone Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Visitez notre profil Youtube">
+                        <img src="/assets/icons/youtube.svg" alt="Icone Youtube">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" aria-label="Visitez notre profil Twitter">
+                        <img src="/assets/icons/twitter.svg" alt="Icone Twitter">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <img src="assets/img/Menu-bot.svg" alt="" class="menu__shape menu__shape--bottom" aria-hidden="true">
+    </nav>
 </header>
 
-    <h1>Programme</h1>
+    <section class="hero">
+    <img src="assets/img/page_programme.webp" alt="Entête" class="hero__background">
+    <h1 class="hero__title">Le programme</h1>
+    </section>  
 
-    <section>
-        <h2>Programme par journée</h2>
-        <p><em>Toutes les projections se font en extérieur</em></p>
-    
-    <section>
-        <h3> <strong>Mardi 15/04  : Projection d'ouverture et ateliers de rencontre avec des réalisateurs.</strong> </h3>
-          <ul>
-              <li><strong>10h00</strong> - Projection d'ouverture : "Omnibus" </li>
-              <li><strong>11h00</strong> - Atelier de rencontre avec les réalisateurs </li>
-              <li><strong>13h00</strong> - Projection : "Mr Hublot" </li>
-              <li><strong>15h00</strong> - Course d'ouverture : Trail en plein air (5 km) </li>
-              <li><strong>17h00</strong> - Projection : "Logorama©" </li>
+    <section class="intro">
+        <h2 class="intro__title">Programme par journée</h2>
+        <p class="intro__text"><em>*Toutes les projections se font en extérieur</em></p>
+          
+          <section class="jour">
+        <h3 class="jour__title"> <strong>Mardi 15/04  : Projection d'ouverture et ateliers de rencontre avec des réalisateurs.</strong> </h3>
+          <ul class="jour__list">
+              <li class="jour__item"><strong>10h00</strong> - Projection d'ouverture : "Omnibus" </li>
+              <li class="jour__item"><strong>11h00</strong> - Atelier de rencontre avec les réalisateurs </li>
+              <li class="jour__item"><strong>13h00</strong> - Projection : "Mr Hublot" </li>
+              <li class="jour__item"><strong>15h00</strong> - Course d'ouverture : Trail en plein air (5 km) </li>
+              <li class="jour__item"><strong>17h00</strong> - Projection : "Logorama©" </li>
           </ul>
     </section>
 
-    <section>
-        <h3> <strong>Mercredi 16/04 : Courses sportives en plein air + projections thématiques.</strong> </h3>
-          <ul>
-              <li><strong>09h00</strong> - Séance de Yoga en plein air </li>
-              <li><strong>11h00</strong> - Projection thématique : "Le Mozart des pickpockets" </li>
-              <li><strong>13h00</strong> - Re-projection : "Omnibus" </li>
-              <li><strong>15h00</strong> - Course à pied en plein air (7 km) </li>
-              <li><strong>17h00</strong> - Projection : "Le Poulet” </li>
+    <hr class="separator">
+
+    <section class="jour">
+        <h3 class="jour__title"> <strong>Mercredi 16/04 : Courses sportives en plein air + projections thématiques.</strong> </h3>
+          <ul class="jour__list">
+              <li class="jour__item"><strong>09h00</strong> - Séance de Yoga en plein air </li>
+              <li class="jour__item"><strong>11h00</strong> - Projection thématique : "Le Mozart des pickpockets" </li>
+              <li class="jour__item"><strong>13h00</strong> - Re-projection : "Omnibus" </li>
+              <li class="jour__item"><strong>15h00</strong> - Course à pied en plein air (7 km) </li>
+              <li class="jour__item"><strong>17h00</strong> - Projection : "Le Poulet” </li>
           </ul>
     </section>
 
-    <section>
-        <h3> <strong>Jeudi 17/04 : Conférences sur le cinéma et le sport + démonstrations sportives.</strong> </h3>
-          <ul>
-              <li><strong>10h00</strong> - Conférence : Le cinéma à l'ère numérique </li>
-              <li><strong>11h30</strong> - Projection : "La rivière du hibou” </li>
-              <li><strong>14h00</strong> - Démonstrations sportives : Initiation au trail </li>
-              <li><strong>16h00</strong> - Projection : "Heureux Anniversaire" </li>
-              <li><strong>18h00</strong> - Projection : "Histoire d’un poisson rouge" </li>
+    <hr class="separator">
+
+    <section class="jour">
+        <h3 class="jour__title"> <strong>Jeudi 17/04 : Conférences sur le cinéma et le sport + démonstrations sportives.</strong> </h3>
+          <ul class="jour__list">
+              <li class="jour__item"><strong>10h00</strong> - Conférence : Le cinéma à l'ère numérique </li>
+              <li class="jour__item"><strong>11h30</strong> - Projection : "La rivière du hibou” </li>
+              <li class="jour__item"><strong>14h00</strong> - Démonstrations sportives : Initiation au trail </li>
+              <li class="jour__item"><strong>16h00</strong> - Projection : "Heureux Anniversaire" </li>
+              <li class="jour__item"><strong>18h00</strong> - Projection : "Histoire d’un poisson rouge" </li>
           </ul>
     </section>
 
-    <section>
-        <h3> <strong>Vendredi 18/04 : Projections de films en compétition + activités sportives participatives.</strong> </h3>
-          <ul>
-              <li><strong>09h30</strong> - Projection de films en compétition : "Un jour comme un autre" </li>
-              <li><strong>11h00</strong> - Projection : "La Jetée” </li>
-              <li><strong>14h00</strong> - Activité sportive participative : Relais en équipe </li>
-              <li><strong>16h30</strong> - Projection de films en compétition : "Le voyage dans la Lune" </li>
-              <li><strong>18h00</strong> - Projection de films en compétition : "Vincent" </li>
+    <hr class="separator">
+
+    <section class="jour">
+        <h3 class="jour__title"> <strong>Vendredi 18/04 : Projections de films en compétition + activités sportives participatives.</strong> </h3>
+          <ul class="jour__list">
+              <li class="jour__item"><strong>09h30</strong> - Projection de films en compétition : "Un jour comme un autre" </li>
+              <li class="jour__item"><strong>11h00</strong> - Projection : "La Jetée” </li>
+              <li class="jour__item"><strong>14h00</strong> - Activité sportive participative : Relais en équipe </li>
+              <li class="jour__item"><strong>16h30</strong> - Projection de films en compétition : "Le voyage dans la Lune" </li>
+              <li class="jour__item"><strong>18h00</strong> - Projection de films en compétition : "Vincent" </li>
           </ul>
     </section>
 
-    <section>
-        <h3> <strong>Samedi 19/04 : Remise de prix et soirée festive.</strong> </h3>
-          <ul>
-              <li><strong>10h00</strong> - Projection spéciale : “Emilie Muller </li>
-              <li><strong>14h00</strong> - Remise des prix du festival </li>
-              <li><strong>19h30</strong> - Soirée festive et projection en plein air </li>
+    <hr class="separator">
+
+    <section class="jour">
+        <h3 class="jour__title"> <strong>Samedi 19/04 : Remise de prix et soirée festive.</strong> </h3>
+          <ul class="jour__list">
+              <li class="jour__item"><strong>10h00</strong> - Projection spéciale : “Emilie Muller </li>
+              <li class="jour__item"><strong>14h00</strong> - Remise des prix du festival </li>
+              <li class="jour__item"><strong>19h30</strong> - Soirée festive et projection en plein air </li>
           </ul>
     </section>
 
-    <section>
-        <h3> <strong>Dimanche 20/04 : Clôture du festival.</strong> </h3>
-          <ul>
-              <li><strong>09h00</strong> - Marche solidaire </li>
-              <li><strong>11h30</strong> - Projection de clôture : "L’accordeur” </li>
-              <li><strong>14h00</strong> - Cérémonie de clôture : derniers échanges et remerciements à tous les participants et organisateurs. </li>
+    <hr class="separator">
+
+    <section class="jour">
+        <h3 class="jour__title"> <strong>Dimanche 20/04 : Clôture du festival.</strong> </h3>
+          <ul class="jour__list">
+              <li class="jour__item"><strong>09h00</strong> - Marche solidaire </li>
+              <li class="jour__item"><strong>11h30</strong> - Projection de clôture : "L’accordeur” </li>
+              <li class="jour__item"><strong>14h00</strong> - Cérémonie de clôture : derniers échanges et remerciements à tous les participants et organisateurs. </li>
           </ul>
     </section>
 
-    <section>
-        <h3> <strong>Lundi 21/04 : Activités libres.</strong> </h3>
-          <ul>
-              <li><strong>10h00</strong> - Activités libres : Randonnée ou course amicale </li>
-              <li><strong>17h00</strong> - Fin du festival </li>
+    <hr class="separator">
+
+    <section class="jour">
+        <h3 class="jour__title"> <strong>Lundi 21/04 : Activités libres.</strong> </h3>
+          <ul class="jour__list">
+              <li class="jour__item"><strong>10h00</strong> - Activités libres : Randonnée ou course amicale </li>
+              <li class="jour__item"><strong>17h00</strong> - Fin du festival </li>
           </ul>
     </section>  
   </section>
 
-    <section>
-        <a href="assets/docs/programme_evenement_trai'ler.pdf" download="programme_evenement_trai'ler.pdf">Télécharger le programme 
+  <hr class="separator">
+
+    <section class="btn">
+        <a href="assets/docs/programme_evenement_trai'ler.pdf" download="programme_evenement_trai'ler.pdf" class="btn__bouton">Télécharger le programme 
             (.PDF)</a>
     </section>
 
-    <section>
-        <h2>Rencontres</h2>
-        <h4><strong>Rencontre avec les créateurs primés : L'art du court-métrage.</strong></h4>
-        <h5>Invité : <strong>Sam Karmann</strong> (<em>Omnibus</em>). </h5>
-        <p>
+    <hr class="separator">
+
+    <section class="text">
+        <h2 class="text__title">Rencontres</h2>
+        <h4 class="text__subtitle"><strong>Rencontre avec les créateurs primés : L'art du court-métrage.</strong></h4>
+        <h5 class="text__subtitle2">Invité : <strong>Sam Karmann</strong> (<em>Omnibus</em>). </h5>
+        <p class="text__texts">
         Réalisateur récompensé par l'Oscar et la Palme d'Or, qui partagera son expérience de la 
         réalisation d'un court-métrage marquant et son regard sur l'évolution du format court.
         </p>
 
-        <h4><strong>L'animation comme outil de narration et de satire.</strong></h4>
-        <h5>Invités : <strong>Laurent Witz</strong> et <strong>Alexandre Espigares</strong> (<em>Mr Hublot</em>)</h5>
-        <p>
+        <h4 class="text__subtitle"><strong>L'animation comme outil de narration et de satire.</strong></h4>
+        <h5 class="text__subtitle2">Invités : <strong>Laurent Witz</strong> et <strong>Alexandre Espigares</strong> (<em>Mr Hublot</em>)</h5>
+        <p class="text__texts">
         Lauréats de l'Oscar pour leur œuvre poétique et futuriste.
         <strong>François Alaux</strong>, <strong>Hervé de Crécy</strong> et <strong>Ludovic Houplain</strong> (<em>Logorama</em>), 
         réalisateurs de cette satire visuelle acclamée qui explore le pouvoir des marques.
         </p>
 
-        <h4><strong>Hommage aux classiques intemporels.</strong></h4>
-        <h5><em>Focus sur les œuvres qui ont façonné le genre :</em></h5>
-        <p>
+        <h4 class="text__subtitle"><strong>Hommage aux classiques intemporels.</strong></h4>
+        <h5 class="text__subtitle2"><em>Focus sur les œuvres qui ont façonné le genre :</em></h5>
+        <p class="text__texts">
         <em>La Jetée</em>, réalisé par <strong>Chris Marker</strong>, un chef-d’œuvre visionnaire en science-fiction.
         </p>
         
-        <p>
+        <p class="text__texts">
         <em>Le Voyage dans la Lune</em>, de <strong>Georges Méliès</strong>, pionnier du cinéma.
         <em>La Rivière du Hibou</em>, adapté par <strong>Robert Enrico</strong>, et <em>Le Poulet</em> de <strong>Claude Berri</strong>, 
         qui ont marqué les débuts du cinéma français.    
         </p>
 
-        <h4><strong>Session interactive : Questions au public.</strong></h4>
-        <p>
+        <h4 class="text__subtitle"><strong>Session interactive : Questions au public.</strong></h4>
+        <p class="text__texts">
         Les réalisateurs discuteront des <strong>défis de production</strong>, du <em>financement des courts-métrages, et de leur 
         vision artistique</em> tout en répondant aux questions des spectateurs.
         </p>
 
-        <h4><strong>Atelier découverte.</strong></h4>
-        <p>
+        <h4 class="text__subtitle"><strong>Atelier découverte.</strong></h4>
+        <p class="text__texts">
         Conférence “<em>Créer un court-métrage inspiré des maîtres</em>", animé par un <strong>expert</strong> du genre, 
         permettra aux participants de se <em>familiariser avec les techniques de mise en scène et de storytelling.</em>
         </p>
     </section>
 
-    <section>
-        <h2>Précisions</h2>
-        <h3>Le festival se déroulera du 15 au 21 avril 2025. </h3>
+    <hr class="separator">
 
-        <h4><strong>Projections de courts-métrages :</strong></h4>
-        <p>
+    <section class="text btn ">
+        <h2 class="text__title">Précisions</h2>
+        <h3 class="text__subtitle">Le festival se déroulera du 15 au 21 avril 2025. </h3>
+
+        <h4 class="text__subtitle"><strong>Projections de courts-métrages :</strong></h4>
+        <p class="text__texts">
         Chaque soir, assistez à une sélection de <em>courts-métrages inspirants</em>, soigneusement sélectionnés par des 
         <strong>professionnels </strong> ainsi que de <strong>nouveaux exposants</strong>. Les projections auront lieu en plein 
         <em>air dans un cadre naturel exceptionnel</em>.
         </p>
 
-        <h4><strong>Sessions sportives :</strong></h4>
-        <p>
+        <h4 class="text__subtitle"><strong>Sessions sportives :</strong></h4>
+        <p class="text__texts">
         Participez à des <em>activités sportives ouvertes à tous</em>, quel que soit votre niveau. Courses, randonnées, séances de 
         fitness et autres challenges seront au programme pour vous faire bouger dans une <strong>ambiance conviviale</strong>.
         </p>
 
-        <h4> <strong>Ateliers interactifs :</strong></h4>
-        <p>
+        <h4 class="text__subtitle"> <strong>Ateliers interactifs :</strong></h4>
+        <p class="text__texts">
         Découvrez <em>les coulisses du cinéma</em> à travers des <strong>ateliers immersifs</strong>, apprenez à tourner vos propres 
         mini-courts-métrages, ou <em>initiez-vous à la création de contenus en</em> <strong>réalité virtuelle</strong> .
         </p>
         
-        <a href="liste_films.html">Découvrez les films</a>
+        <a class="btn__bouton" href="liste_films.html">Découvrez les films</a>
     </section>
 
-    <section>
-        <h2>Informations pratiques</h2>
-        <p>Toutes les activités sont <strong>gratuites</strong> et <strong>accessibles</strong> à <em>tous</em>.</p>
-        <p>Apporter des vêtements <em>confortables et adaptés aux activités physiques</em> est recommandé.  </p>
-        <p>Des <em>équipements spécifiques</em> seront également disponibles sur place.</p>
+    <hr class="separator">
+
+    <section class="text">
+        <h2 class="text__title">Informations pratiques</h2>
+        <p class="text__texts">Toutes les activités sont <strong>gratuites</strong> et <strong>accessibles</strong> à <em>tous</em>.</p>
+        <p class="text__texts">Apporter des vêtements <em>confortables et adaptés aux activités physiques</em> est recommandé.  </p>
+        <p class="text__texts">Des <em>équipements spécifiques</em> seront également disponibles sur place.</p>
     </section>
 
-    <section>
-        <h2>Apprenez-en plus !</h2>
-        <a href="infos_pratiques.html">Quand ? Où ?</a>
+    <hr class="separator">
+
+    <section class="text btn">
+        <h2 class="text__texts">Apprenez-en plus !</h2>
+        <a class="btn__bouton" href="infos_pratiques.html">Quand ? Où ?</a>
     </section>
+
+    <hr class="separator">
 
     <footer class="footer">
       <div class="footer__header">

@@ -1,7 +1,19 @@
-.btn {
-    display: inline-block;
+.btn__bouton {
+    text-transform: uppercase;
     text-decoration: none;
-    color: var(--main-colors-rouge-1);
-    border: 1px solid var(--main-colors-rouge-1); 
+    color: var(--grey-noir);
+    border: 1px solid var(--grey-noir);
+    border-radius: 5px;
     font-weight: bold;
+    padding: 20px 10px;
+    background-color: var(--main-colors-rouge-1);
+    font-size: 16px;
+
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }

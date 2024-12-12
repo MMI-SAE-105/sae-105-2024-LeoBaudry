@@ -1,5 +1,6 @@
 .intro__title {
-    margin-top: -9rem;
+    padding-top: 10px;
+    margin-top: -10rem;
     text-align: center;
 }
 
@@ -43,4 +44,19 @@
     align-items: center; 
     gap: 1rem; 
     margin-top: 2rem; 
+}
+
+#page_programmation .intro__text em {
+   font-size: var(--tt-b2);
+}
+
+#page_programmation .intro__text {
+    margin-bottom: -25px;
+}
+
+#page_programmation .intro__title {
+    margin-top: -14rem;
+    text-align: center;
+    padding: 0 20px;
+    font-weight: 700;
 }
