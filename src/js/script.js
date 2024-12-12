@@ -1,3 +1,7 @@
+
+
+////////////////////////////// Menu JS  //////////////////////////////
+
 // On cible les éléments à modifier
 const toggle = document.querySelector(".menu-btn");
 const nav = document.querySelector(".menu");
@@ -14,3 +18,25 @@ if (toggle && nav) {
     page.classList.toggle("noscroll", isClosed);
   });
 }
+
+////////////////////////////// Menu Accordéon  //////////////////////////////
+
+document.addEventListener('DOMContentLoaded', function() {
+  const accordion = document.querySelector(".accordion");
+
+  accordion.querySelectorAll("details").forEach((details) => {
+      details.addEventListener("toggle", function() {
+          if (this.open) {
+              this.classList.add("expanding");
+              this.classList.remove("collapsing");
+          } else {
+              this.classList.add("collapsing");
+              this.classList.remove("expanding");
+          }
+      });
+
+      details.addEventListener("animationend", function() {
+          this.classList.remove("expanding", "collapsing");
+      });
+  });
+});
