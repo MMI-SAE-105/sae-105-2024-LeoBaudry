@@ -18,6 +18,7 @@
 
 @import "layout/header.css";
 @import "layout/background.css";
+@import "layout/footer.css";
 
 /* Components */
 @import "components/menu.css";
@@ -28,4 +29,5 @@
 @import "components/separator.css";
 @import "components/features.css";
 @import "components/accordion.css";
+@import "components/partners.css";
 

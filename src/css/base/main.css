@@ -24,6 +24,19 @@ h3 {
     color: var(--grey-noir);
 }
 
+h4 {
+    font-size: var(--tt-b1);
+    font-weight: 500;
+    color: var(--grey-noir);
+}
+
+p {
+    font-size: var(--tt-b2);
+    font-weight: 400;
+    color: var(--grey-noir);
+    line-height: 1.2;
+}
+
 button,
 input,
 select,

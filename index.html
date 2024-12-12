@@ -6,12 +6,7 @@
     
     <title>Page d'accueil</title>
 
-    <link
-    rel="icon"
-    type="image/png"
-    href="/assets/favicons/favicon-32x32.png"
-    sizes="96x96"
-  />
+    <link rel="icon" type="image/png" href="/assets/favicons/favicon-32x32.png" sizes="96x96"/>
   <link rel="icon" type="image/svg+xml" href="/assets/favicons/favicon.svg" />
   <link rel="shortcut icon" href="/assets/favicons/favicon.ico" />
   <link
@@ -153,9 +148,18 @@
         </details>
       </div>
 
-    <section class="practical-info">
-        <h2 class="practical-info__title">Infos pratiques</h2>
-    </section>
+      <hr class="separator">
+
+    <div class="accordion">
+      <details class="accordion__item" open>
+        <summary class="accordion__item-btn">Infos Pratiques</summary>
+        <div class="accordion__item-desc">
+          <h4><a href="infos_pratiques.html">Apprenez tout ce qu'il y a à savoir sur l'événement !</a></h4>
+        </div>
+      </details>
+    </div>
+
+    <hr class="separator">
 
     <section class="partners">
         <h2 class="partners__title">Nos partenaires</h2>
@@ -168,28 +172,44 @@
     </section>
 
     <footer class="footer">
-      <h3 class="footer__title"> <a href="index.html" class="footer__logo-link"><img src="assets/icons/logo64.svg" alt="Logo du festival" class="footer__logo"></a>
-      Festival "Ça va trai'ler"</h3>
-      
-      <nav class="footer__nav">
-        <h4 class="footer__nav-title">Menu</h4>
-        <ul class="footer__nav-list">
-          <li class="footer__nav-item"><a href="mentions_legales.html" class="footer__nav-link"> Mentions légales </a></li>
-          <li class="footer__nav-item"><a href="page_contact.html" class="footer__nav-link"> Contacts & accès </a></li>
-        </ul>
-      </nav>
-      <h5 class="footer__contact-title">Contact</h5>
-      <address class="footer__address">90000 Belfort <a href="tel:+33637055454" class="footer__tel">06 37 05 54 54</a> <a href="mailto:contact@festival-trailer.fr" class="footer__email">contact@festival-trailer.fr</a></address>
-      <h5 class="footer__social-title">Nous suivre</h5>
-        <ul class="footer__social-list" aria-label="Suivez-nous sur les réseaux sociaux">
+      <div class="footer__header">
+          <a href="index.html" class="footer__logo-link">
+              <img src="assets/icons/logo64.svg" alt="Logo du festival" class="footer__logo">
+          </a>
+          <div>
+              <h3 class="footer__title">Festival</h3>
+              <h3 class="footer__title">"Ça va trai'ler !"</h3>
+          </div>
+      </div>
+  
+      <div class="footer__content">
+          <nav class="footer__nav">
+              <h4 class="footer__nav-title">Menu</h4>
+              <ul class="footer__nav-list">
+                  <li class="footer__nav-item"><a href="mentions_legales.html" class="footer__nav-link">Mentions légales</a></li>
+                  <li class="footer__nav-item"><a href="page_contact.html" class="footer__nav-link">Contacts & accès</a></li>
+              </ul>
+          </nav>
+  
+          <h5 class="footer__contact-title">Contact</h5>
+          <address class="footer__address">
+              <ul>
+                  <li><a href="https://maps.app.goo.gl/DKkovb8BuvEcPYfT9">90000 Belfort</a></li>
+                  <li><a href="tel:+33637055454" class="footer__tel">06 37 05 54 54</a></li>
+                  <li><a href="mailto:contact@festival-trailer.fr" class="footer__email">contact@festival-trailer.fr</a></li>
+              </ul>
+          </address>
+          <h5 class="footer__social-title">Nous suivre</h5>
+      </div>
+  
+      <ul class="footer__social">
           <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/instagram.svg" alt="Logo Instagram" class="footer__social-icon"></a></li>
           <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/youtube.svg" alt="Logo Youtube" class="footer__social-icon"></a></li>
           <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/twitter.svg" alt="Logo Twitter" class="footer__social-icon"></a></li>
           <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/facebook.svg" alt="Logo Facebook" class="footer__social-icon"></a></li>
           <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/tiktok.svg" alt="Logo Tiktok" class="footer__social-icon"></a></li>
-        </ul>
-  </footer>
-  
+      </ul>
+  </footer> 
   
 </body>
 </html>
