@@ -1,0 +1,48 @@
+.card__img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 8px;
+}
+
+.card__presentation {
+    text-align: left;
+    padding-left: 50px;
+}
+
+.card__bouton {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--grey-noir);
+    border: 1px solid var(--grey-noir);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 20px 10px;
+    font-size: 16px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 2px solid var(--grey-gris-2);
+    border-radius: 2%;
+    margin: 0 30px;
+    padding: 15px 10px;
+}
+
+.card__bouton--rouge {
+    background-color: var(--main-colors-rouge-1);
+}
+
+.card__bouton--orange {
+    background-color: var(--main-colors-orange-1) 
+}
+
+.card__bouton--jaune {
+    background-color: var(--main-colors-jaune-1); 
+}
+
+.card__bouton--bleu {
+    background-color: var(--main-colors-bleu-1);
+}
