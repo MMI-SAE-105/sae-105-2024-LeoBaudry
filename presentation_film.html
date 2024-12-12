@@ -26,70 +26,59 @@
 </head>
 
 <body id="page_presentation_film">
-  <header>
-      <a href="index.html"><img src="assets/icons/logo64.svg" alt="Logo"></a>
-      <img src="assets/img/page_invites.webp" alt="Entête">
+  <header class = header>
+    <a href="index.html" class="header__link"><img src="assets/icons/logo64.svg" alt="Logo" class="header__logo"></a>
+    <h2 class="header__name">Ça va Trai'ler</h2>
 
-      <button
-      class="header__menu-btn menu-btn"
-      aria-label="menu"
-      aria-expanded="false"
-      aria-controls="mainNav">
-      <span class="menu-btn__bar" aria-hidden="true"></span>
-  </button>
+    <button
+    class="header__menu-btn menu-btn"
+    aria-label="menu"
+    aria-expanded="false"
+    aria-controls="mainNav">
+    <span class="menu-btn__bar" aria-hidden="true"></span>
+</button>
 
 
-    <nav class="header__menu menu" id="mainNav" aria-hidden="true">
-      <ul class="menu__list list-unstyled">
-        <li class="menu__item">
-          <a class="menu__link" href="festival.html">Festival</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="programmation.html">Programmation</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="liste_films.html">Liste des films</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="liste_invites.html">Liste des invités</a>
-        </li>
-      </ul>
-      <div class="menu__secondaire">
-        <ul
-          class="menu__social-network list-unstyled"
-          aria-label="Social media"
-        >
-          <li>
-            <a href="#" aria-label="Visitez notre profil Instagram"
-              ><img src="/assets/icons/instagram.svg" alt="Icone Instagram"
-            /></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Visitez notre profil Youtube"
-              ><img src="/assets/icons/youtube.svg" alt="Icone Youtube"
-            /></a>
-          </li>
-          <li>
-            <a href="#" aria-label="Visitez notre profil Twitter"
-              ><img src="/assets/icons/twitter.svg" alt="Icone Twitter"
-            /></a>
-          </li>
-        </ul>
-        <ul class="menu__terms list-unstyled" aria-label="Legal information">
-          <li>
-            <a class="menu__link menu__link--silent"
-              href="infos_pratiques.html">Infos Pratiques</a>
-              
-          </li>
-          <li>
-            <a class="menu__link menu__link--silent"
-              href="page_contact.html">Page contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-  </header>
+<nav class="header__menu menu" id="mainNav" aria-hidden="true">
+  <img src="assets/img/Menu-top.svg" alt="" class="menu__shape menu__shape--top" aria-hidden="true">
+  <ul class="menu__list list-unstyled">
+    <li class="menu__item">
+      <a class="menu__link" href="festival.html">Festival</a>
+    </li>
+    <li class="menu__item">
+      <a class="menu__link" href="programmation.html">Programmation</a>
+    </li>
+    <li class="menu__item">
+      <a class="menu__link" href="liste_films.html">Liste des films</a>
+    </li>
+    <li class="menu__item">
+      <a class="menu__link" href="liste_invites.html">Liste des invités</a>
+    </li>
+  </ul>
+  <div class="menu__secondaire">
+    <ul class="menu__terms list-unstyled" aria-label="Legal information">
+      <li>
+        <a class="menu__link menu__link--silent" href="infos_pratiques.html">Infos Pratiques</a>
+      </li>
+      <li>
+        <a class="menu__link menu__link--silent" href="page_contact.html">Page contact</a>
+      </li>
+    </ul>
+    <ul class="menu__social-network list-unstyled" aria-label="Social media">
+      <li>
+        <a href="#" aria-label="Visitez notre profil Instagram"><img src="/assets/icons/instagram.svg" alt="Icone Instagram"></a>
+      </li>
+      <li>
+        <a href="#" aria-label="Visitez notre profil Youtube"><img src="/assets/icons/youtube.svg" alt="Icone Youtube"></a>
+      </li>
+      <li>
+        <a href="#" aria-label="Visitez notre profil Twitter"><img src="/assets/icons/twitter.svg" alt="Icone Twitter"></a>
+      </li>
+    </ul>
+  </div>
+  <img src="assets/img/Menu-bot.svg" alt="" class="menu__shape menu__shape--bottom" aria-hidden="true">
+</nav>
+</header>
 
 
       <h1>Présentation du film</h1>
@@ -127,28 +116,46 @@
         du Monde</em>, relatant le Vendée Globe de <strong>Damien Seguin </strong>.</p>
     </section>
 
-    <footer>
-      <h3> <a href="index.html"><img src="assets/icons/logo64.svg" alt="Logo du festival"></a>
-      Festival "Ça va trai'ler"</h3>
-      
-      <nav>
-        <h4>Menu</h4>
-        <ul>
-          <li><a href="mentions_legales.html"> Mentions légales </a></li>
-          <li><a href="page_contact.html"> Contacts & accès </a></li>
-        </ul>
-      </nav>
-      <h5>Contact</h5>
-          90000 Belfort <address><a href="tel:+33637055454">06 37 05 54 54</a></address> <address><a href="mailto:contact@festival-trailer.fr">contact@festival-trailer.fr</a></address>
-      <h5>Nous suivre</h5>
-        <ul aria-label="Suivez-nous sur les réseaux sociaux">
-          <li><a href="#"><img src="assets/icons/instagram.svg" alt="Logo Instagram"></a></li>
-          <li><a href="#"><img src="assets/icons/youtube.svg" alt="Logo Youtube"></a></li>
-          <li><a href="#"><img src="assets/icons/twitter.svg" alt="Logo Twitter"></a></li>
-          <li><a href="#"><img src="assets/icons/facebook.svg" alt="Logo Facebook"></a></li>
-          <li><a href="#"><img src="assets/icons/tiktok.svg" alt="Logo Tiktok"></a></li>
-        </ul>
-  </footer>
+    <footer class="footer">
+      <div class="footer__header">
+          <a href="index.html" class="footer__logo-link">
+              <img src="assets/icons/logo64.svg" alt="Logo du festival" class="footer__logo">
+          </a>
+          <div>
+              <h3 class="footer__title">Festival</h3>
+              <h3 class="footer__title">"Ça va trai'ler !"</h3>
+          </div>
+      </div>
+  
+      <div class="footer__content">
+          <nav class="footer__nav">
+              <h4 class="footer__nav-title">Menu</h4>
+              <ul class="footer__nav-list">
+                  <li class="footer__nav-item"><a href="mentions_legales.html" class="footer__nav-link">Mentions légales</a></li>
+                  <li class="footer__nav-item"><a href="page_contact.html" class="footer__nav-link">Contacts & accès</a></li>
+              </ul>
+          </nav>
+  
+          <h5 class="footer__contact-title">Contact</h5>
+          <address class="footer__address">
+              <ul>
+                  <li><a href="https://maps.app.goo.gl/DKkovb8BuvEcPYfT9">90000 Belfort</a></li>
+                  <li><a href="tel:+33637055454" class="footer__tel">06 37 05 54 54</a></li>
+                  <li><a href="mailto:contact@festival-trailer.fr" class="footer__email">contact@festival-trailer.fr</a></li>
+              </ul>
+          </address>
+          <h5 class="footer__social-title">Nous suivre</h5>
+      </div>
+  
+      <ul class="footer__social">
+          <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/instagram.svg" alt="Logo Instagram" class="footer__social-icon"></a></li>
+          <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/youtube.svg" alt="Logo Youtube" class="footer__social-icon"></a></li>
+          <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/twitter.svg" alt="Logo Twitter" class="footer__social-icon"></a></li>
+          <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/facebook.svg" alt="Logo Facebook" class="footer__social-icon"></a></li>
+          <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/tiktok.svg" alt="Logo Tiktok" class="footer__social-icon"></a></li>
+      </ul>
+  </footer> 
+  
   
 
 </body>
