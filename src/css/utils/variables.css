@@ -1,0 +1,58 @@
+/* Couleurs */
+:root {
+    /* Mode 1 */
+    /* color */
+    --grey-blanc: #fafafa;
+    --grey-gris-1: #989592;
+    --grey-gris-2: #cdcac7;
+    --grey-gris-clair-1: #d9d9d9;
+    --grey-gris-clair-2: #e9e7e4;
+    --grey-noir: #1c1514;
+    --main-colors-beige-1: #fffae1;
+    --main-colors-beige-2: #ece9dd;
+    --main-colors-beige-foncé: #fff7ce;
+    --main-colors-bleu-1: #5bc0eb;
+    --main-colors-bleu-2: #9acde2;
+    --main-colors-bleu-3: #add0df;
+    --main-colors-bleu-foncé: #0c79a8;
+    --main-colors-bleu-très-foncé: #004bdc;
+    --main-colors-jaune-1: #ffd300;
+    --main-colors-jaune-2: #ecd66d;
+    --main-colors-jaune-3: #e0d8b3;
+    --main-colors-orange-1: #ff8c42;
+    --main-colors-orange-2: #ecb28e;
+    --main-colors-orange-3: #e6bea4;
+    --main-colors-rouge-1: #ff6f61;
+    --main-colors-rouge-2: #eca49d;
+    --main-colors-rouge-3: #e6b4af;
+    --transparent-beige-transparent-50: #fffae180;
+    --transparent-bleu-transparent-50: #5bc0eb80;
+    --transparent-jaune-transparent-50: #ffd30080;
+    --transparent-orange-transparent-50: #ff8c4280;
+    --transparent-rouge-transparent-50: #ff6f6180;
+    --transparent-transparent: #ffffff00;
+  
+  /* Taille des typos */
+  --tt-st: 0,9375rem;
+  --tt-bu_s: 1rem;
+  --tt-b2: 1,0625rem;
+  --tt-bu: 1.125rem;
+  --tt-b1: 1.25rem;
+  --tt-h3: 1.75rem;
+  --tt-h2: 2rem;
+  --tt-h1: 2.875rem;
+
+    /* Familles des typos */
+
+    --font-sans-serif-one: "Mulish", sans-serif;
+    --font-sans-serif-two: "Poppins", sans-serif;
+    --font-sans-serif-three: "DM Sans", sans-serif;
+    --font-sans-serif-four: "Inter", sans-serif;
+
+      /* Espaces */
+  --space1x: 10px;
+  --space2x: 20px;
+  --space3x: 40px;
+  --space4x: 80px;
+  --space5x: 120px;
+}

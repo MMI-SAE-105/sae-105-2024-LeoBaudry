@@ -1,7 +1,4 @@
-body  {
-    background-color: #FFFAE1;
 
-}
 
 
 
@@ -10,5 +7,21 @@ body  {
 /* Vendors */
 @import "vendors/normalize.css";
 
+/* Utils */
+@import "utils/variables.css";
+
+/* Base */
+
+/* Layout */
+
 /* Components */
 @import "components/menu.css";
+
+
+
+
+
+body  {
+    background-color: #FFFAE1;
+
+}
