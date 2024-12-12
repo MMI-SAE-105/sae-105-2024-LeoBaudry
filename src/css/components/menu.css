@@ -1,24 +1,26 @@
 .menu {
     visibility: hidden;
     display: flex;
-    position: fixed;
+    position: fixed; 
     inset: 0;
     z-index: 1;
     background-color: var(--main-colors-beige-1);
     color: var(--grey-noir);
     flex-direction: column;
-    justify-content: space-between;
-    padding: var(--space5x) var(--space5x) var(--space3x);
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 10rem 2rem 2rem; 
     transform: translateX(100vw);
     transition: all 0.3s ease-in-out;
-  }
-  .menu[aria-hidden="false"] {
+}
+
+.menu[aria-hidden="false"] {
     opacity: 1;
     transform: translateX(0);
     visibility: visible;
-  }
-  
-  .menu-btn {
+}
+
+.menu-btn {
     position: relative;
     width: 30px;
     height: 30px;
@@ -28,38 +30,96 @@
     justify-content: center;
     align-items: center;
     margin-right: var(--space3x);
-  }
+}
 
-  .menu__link {
-    color: var(--grey_blanc);
+.menu__link {
+    color: var(--grey_noir);
     text-decoration: none;
     font-size: var(--tt-h3);
-    display: block;
-  }
-  
-  .menu__link--silent {
-    color: var(--grey-blanc);
+    display: flex;
+    white-space: nowrap;
+    align-items: center; 
+    margin-top: 0.5rem; 
+    margin-bottom: 0.5rem; 
+    position: relative; 
+    padding-left: 15px; 
+}
+
+.menu__link::before {
+    content: "";
+    position: absolute;
+    left: 0; 
+    top: 9px;
+    height: 36px;
+    width: 4px;
+}
+
+
+.menu__item:nth-child(1) .menu__link::before {
+    background-color: var(--main-colors-rouge-1); 
+}
+
+
+.menu__item:nth-child(2) .menu__link::before {
+    background-color: var(--main-colors-orange-1); 
+}
+
+
+.menu__item:nth-child(3) .menu__link::before {
+    background-color: var(--main-colors-jaune-1); 
+}
+
+
+.menu__item:nth-child(4) .menu__link::before {
+    background-color: var(--main-colors-bleu-1); 
+}
+
+.menu__link--silent {
+    color: var(--grey-noir);
     font-size: var(--fs-s);
-  }
-  
-  .menu__item {
-    margin-bottom: var(--space3x);
-    padding-bottom: var(--space1x);
+}
+
+.menu__item {
+    margin-bottom: 1rem; 
+    padding-bottom: 0.2rem;
     border-bottom: 1px solid var(--grey-blanc);
-  }
-  
-  .menu__social-network,
-  .menu__terms {
+    width: 100%; 
+}
+
+.menu__terms {
+    display: flex;
+    padding-bottom: 12rem;
+    flex-direction: column; 
+    gap: 0.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position:relative;
+    margin-top: 1rem; 
+}
+
+.menu__terms::before {
+  content: "";
+  position: absolute;
+  top:-1rem; 
+  left: 0.5rem;
+  width: 100%;
+  border-top: 2px solid var(--grey-noir); 
+}
+
+.menu__social-network {
+    position: absolute;
+    bottom: 2rem; 
+    left: 2rem; 
     display: flex;
     gap: var(--space2x);
-    justify-content: end;
-    margin-bottom: var(--space2x);
-  }
-  
+    justify-content: flex-start; 
+    align-items: center; 
+    z-index: 2; 
+}
 
-  .menu-btn__bar,
-  .menu-btn__bar::before,
-  .menu-btn__bar::after {
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
     content: "";
     background: var(--grey-blanc);
     height: 2px;
@@ -69,75 +129,91 @@
     left: 0;
     z-index: 10;
     transition: all 0.4s ease-in-out;
-  }
-  
-  .menu-btn__bar::before {
+}
+
+.menu-btn__bar::before {
     top: -10px;
-  }
-  
-  .menu-btn__bar::after {
+}
+
+.menu-btn__bar::after {
     top: 10px;
-  }
-  
-  /* Technique pour transformer les 3 barres du bouton de menu en croix
-  Ne pas oublier d'ajouter une transition plus haut pour l'animation */
-  .menu-btn[aria-expanded="true"] .menu-btn__bar,
-  .menu-btn[aria-expanded="true"] .menu-btn__bar::before,
-  .menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
     transform: rotate(135deg);
     background: var(--grey-noir);
-  }
-  
-  .menu-btn[aria-expanded="true"] .menu-btn__bar::before,
-  .menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar::before,
+.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
     transform: rotate(90deg);
     top: 0;
-  }
-  
+}
 
-  
-  .menu-btn__bar,
-  .menu-btn__bar::before,
-  .menu-btn__bar::after {
+.menu-btn__bar,
+.menu-btn__bar::before,
+.menu-btn__bar::after {
     content: "";
     position: absolute;
     width: 100%;
     height: 2px;
     background-color: var(--grey-blanc);
     transition: all 0.4s ease-in-out;
-  }
-  
-  .menu-btn__bar {
-    /* Position de la barre du milieu */
+}
+
+.menu-btn__bar {
     top: 50%;
     transform: translateY(-50%);
-  }
-  
-  .menu-btn__bar::before {
+}
+
+.menu-btn__bar::before {
     top: -11px;
-  }
-  
-  .menu-btn__bar::after {
+}
+
+.menu-btn__bar::after {
     top: 11px;
-  }
-  
-  /* Animation de transformation en croix */
-  .menu-btn[aria-expanded="true"] .menu-btn__bar {
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar {
     background-color: var(--grey-noir);
     transform: rotate(45deg);
-  }
-  
-  .menu-btn[aria-expanded="true"] .menu-btn__bar::before {
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar::before {
     top: 0;
     transform: rotate(90deg);
     background-color: var(--grey-noir);
-  }
-  
-  .menu-btn[aria-expanded="true"] .menu-btn__bar::after {
+}
+
+.menu-btn[aria-expanded="true"] .menu-btn__bar::after {
     top: 0;
     transform: rotate(-90deg);
     background-color: var(--grey-noir);
-  }
+}
 
+.menu__shape {
+    position: absolute;
+    pointer-events: none;
+}
 
-  
+.menu__shape--top {
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.menu__shape--bottom {
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    height: 100%;
+}
