@@ -1,6 +1,6 @@
 hero.title {
   font-size: var(--tt-h1);
   font-weight: 700;
-  color: var(--color-primary);
+  color: var(--grey-blanc);
   margin-bottom: 1.5rem;
 }

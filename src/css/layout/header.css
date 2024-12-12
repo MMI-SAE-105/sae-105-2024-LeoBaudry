@@ -1,28 +1,16 @@
 .header {
-  position: sticky;
+  position: fixed;
   left: 0;
   top: 0;  
   justify-content: space-between;
   align-items: center;
   width: 100%;
   display: flex;
-  padding: var(--space1x) 1vw; /* Utilisez des unités relatives pour le padding */
+  padding: var(--space1x) 1vw; 
   background-color: var(--main-colors-rouge-1);
   z-index: 10;
 }
 
-.header {
-  position: absolute;
-  left: 0;
-  top: 0;  
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  display: flex;
-  padding: var(--space1x) 1vw; /* Utilisez des unités relatives pour le padding */
-  background-color: var(--main-colors-rouge-1);
-  z-index: 1;
-}
 
 .header__menu.btn {
   display: none;
@@ -33,14 +21,9 @@
   align-items: center;
 }
 
-.header-background {
-  width: 100%; /* S'assure que l'image prend toute la largeur */
-  height: 100%; /* Conserve le ratio de l'image */
-  display: block; /* Évite les espaces sous l'image */
-  background-image: url('/assets/img/page_accueil_festival.webp');
-  background-size: cover; /* Ajuste la taille de l'image pour couvrir le header */
-  background-position: top left; /* Positionne l'image en haut à gauche */
-  background-repeat: no-repeat; /* Évite la répétition de l'image */
-
+.header__name   {
+  color: var(--grey-blanc);
+  font-size: var(--tt-h3);
+  margin-right: var(--space2x);
 }
 
