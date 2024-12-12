@@ -24,3 +24,14 @@
 .text__texts {
     padding-left: 10px;
 }
+
+.text__texts2 {
+    padding-left: 10px;
+    margin-bottom: -10px;
+}
+
+.text__video {
+    padding: 0;
+    margin: 0;
+    size: fill;
+}
