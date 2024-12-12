@@ -1,0 +1,7 @@
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--main-colors-rouge-1);
+    border: 1px solid var(--main-colors-rouge-1); 
+    font-weight: bold;
+}

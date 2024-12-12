@@ -24,7 +24,7 @@ h3 {
     color: var(--grey-noir);
 }
 
-/* button, */
+button,
 input,
 select,
 textarea {
@@ -56,4 +56,3 @@ textarea {
   .noscroll {
     overflow: hidden;
   }
-  

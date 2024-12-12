@@ -3,12 +3,3 @@ video {
   max-width: 100%;
   height: auto;
 }
-
-figure {
-  margin: 0;
-}
-
-figcaption {
-  font-size: var(--fs-xs);
-  color: var(--gray-600);
-}

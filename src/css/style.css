@@ -16,9 +16,13 @@
 
 /* Layout */
 
+@import "layout/header.css";
+@import "layout/background.css";
+
 /* Components */
 @import "components/menu.css";
-
+@import "components/btn.css";
+@import "components/hero.css";
 
 
 
