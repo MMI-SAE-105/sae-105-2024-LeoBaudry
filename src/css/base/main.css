@@ -6,13 +6,19 @@ body {
     font-weight: 375;
 }
 
+h1, h2, h3, h4, p {
+  padding: 30px, 0;
+}
+
 h1 {
+  text-align: center;
     font-size: var(--tt-h1);
     font-weight: 700;
     color: var(--grey-blanc);
 }
 
 h2 {
+  text-align: center;
     font-size: var(--tt-h2);
     font-weight: 600;
     color: var(--grey-noir);
@@ -35,6 +41,8 @@ p {
     font-weight: 400;
     color: var(--grey-noir);
     line-height: 1.2;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 button,

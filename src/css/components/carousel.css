@@ -1,0 +1,120 @@
+/* Limite la largeur maximale de l'image à 100% de son conteneur - https://developer.mozilla.org/fr/docs/Web/CSS/max-width */
+/* Ajuste la hauteur de l'image automatiquement pour conserver les proportions - https://developer.mozilla.org/fr/docs/Web/CSS/height */
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Mise en forme du carousel en CSS.
+  Utiliser flex pour positionner les item du carousel les uns à coté des autres.
+  La propriété "overflow-x" avec la valeur "scroll" permet rogner le contenu afin de tenir horizontalement dans la boîte de remplissage et d'ajouter un scroll horizontal si le contenu déborde.
+  https://developer.mozilla.org/fr/docs/Web/CSS/overflow-x
+  
+  La propriété "scroll-snap-type" définit la force d'adhérence aux points d'accroche en cas de défilement d'un conteneur
+  https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-type
+  
+  Les margin négatifs à gauche et à droite corresponde à l'éespace entre le navigateur et le début du contenu, de sorte que le carousel soit collé au bords de l'écran.
+  
+  */
+  
+  /* Compléter la suite du code */
+  .carousel__controls {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0;
+    /* Utilise flexbox pour aligner les éléments enfants - https://developer.mozilla.org/fr/docs/Web/CSS/display */
+    /* Espace entre les éléments enfants 16px- https://developer.mozilla.org/fr/docs/Web/CSS/gap */
+    /* Aligne les éléments enfants au centre verticalement - https://developer.mozilla.org/fr/docs/Web/CSS/align-items */
+    /* Centre les éléments enfants horizontalement - https://developer.mozilla.org/fr/docs/Web/CSS/justify-content */
+    /* Marge de 16px en haut et en bas - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
+  }
+  .carousel__button {
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: white; 
+    z-index: 10;
+  
+    /* Largeur du bouton 50px - https://developer.mozilla.org/fr/docs/Web/CSS/width */
+    /* Hauteur du bouton 50px - https://developer.mozilla.org/fr/docs/Web/CSS/height */
+    /* Utilise flexbox pour aligner le contenu du bouton - https://developer.mozilla.org/fr/docs/Web/CSS/display */
+    /* Aligne le contenu du bouton au centre verticalement - https://developer.mozilla.org/fr/docs/Web/CSS/align-items */
+    /* Centre le contenu du bouton horizontalement - https://developer.mozilla.org/fr/docs/Web/CSS/justify-content */
+    /* Bordure solide de 1px - https://developer.mozilla.org/fr/docs/Web/CSS/border */
+    /* Bordure arrondie pour faire un cercle - https://developer.mozilla.org/fr/docs/Web/CSS/border-radius */
+  }
+  .carousel__button--prev {
+    left: 16px;
+    transform: rotate(180deg);
+  }
+  
+  .carousel__button--next {
+    right: 16px;
+  } 
+  
+  .carousel__container {
+    display: flex;
+    gap: 8px;
+    overflow-x: scroll;
+    margin-left: -12px;
+    margin-right: -12px;  
+    scroll-snap-type: x mandatory;
+    position: relative;
+    /* Utilise flexbox pour aligner les éléments enfants - https://developer.mozilla.org/fr/docs/Web/CSS/display */
+    /* Espace entre les éléments enfants 16px - https://developer.mozilla.org/fr/docs/Web/CSS/gap */
+    /* Ajoute un défilement horizontal si le contenu déborde - https://developer.mozilla.org/fr/docs/Web/CSS/overflow */
+    /* Marge négative à gauche pour coller le carousel au bord de l'écran -24px - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
+    /* Marge négative à droite pour coller le carousel au bord de l'écran -24px - https://developer.mozilla.org/fr/docs/Web/CSS/margin */
+    /* Définit le type de défilement pour accrocher les éléments - https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-type */
+  }
+  
+  .carousel__item {
+    flex: 1 0 100%; 
+    scroll-snap-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+  
+    /* L'élément prend 1 part de l'espace disponible, ne rétrécit pas, et a une largeur de base de 260px - https://developer.mozilla.org/fr/docs/Web/CSS/flex */
+    /* Aligne l'élément au centre lors du défilement - https://developer.mozilla.org/fr/docs/Web/CSS/scroll-snap-align */
+  }
+  
+  .carousel__item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  
+  .carousel__nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 16px 0;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .carousel__nav a {  
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+  }
+  
+  .carousel__nav a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  

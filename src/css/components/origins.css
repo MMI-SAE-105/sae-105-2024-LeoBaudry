@@ -1,0 +1,12 @@
+.origins__title {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: var(--tt-h2);
+    font-family: var(  --font-sans-serif-Poppins);
+}
+
+.origins__text {
+    padding-left: 30px;
+    padding-right: 30px;
+
+}
