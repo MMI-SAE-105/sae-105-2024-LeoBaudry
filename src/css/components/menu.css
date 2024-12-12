@@ -108,8 +108,8 @@
 
 .menu__social-network {
     position: absolute;
-    bottom: 2rem; 
-    left: 2rem; 
+    bottom: 0.5rem; 
+    left: 0.5rem; 
     display: flex;
     gap: var(--space2x);
     justify-content: flex-start; 
