@@ -22,22 +22,28 @@ if (toggle && nav) {
 ////////////////////////////// Menu Accordéon  //////////////////////////////
 
 document.addEventListener('DOMContentLoaded', function() {
-  const accordion = document.querySelector(".accordion");
+  const accordions = document.querySelectorAll(".accordion");
 
-  accordion.querySelectorAll("details").forEach((details) => {
+  accordions.forEach((accordion) => {
+    accordion.querySelectorAll("details").forEach((details) => {
       details.addEventListener("toggle", function() {
-          if (this.open) {
-              this.classList.add("expanding");
-              this.classList.remove("collapsing");
-          } else {
-              this.classList.add("collapsing");
-              this.classList.remove("expanding");
-          }
+        if (this.open) {
+          this.classList.add("expanding");
+          this.classList.remove("collapsing");
+        } else {
+          this.classList.add("collapsing");
+          this.classList.remove("expanding");
+        }
       });
 
-      details.addEventListener("animationend", function() {
-          this.classList.remove("expanding", "collapsing");
+      details.addEventListener("animationend", function(event) {
+        if (event.animationName === "accordion-slide-in" || event.animationName === "accordion-slide-out") {
+          setTimeout(() => {
+            this.classList.remove("expanding", "collapsing");
+          }, 0);
+        }
       });
+    });
   });
 });
 

@@ -1,20 +1,23 @@
-.accordion {
+:root {
     --anim-dur: 0.5s;
     --trans-dur: 0.3s;
     --ease-in-out: ease-in-out;
     --ease-out: ease-out;
     --ease-in: ease-in;
+  }
+  
+  .accordion {
     margin: auto;
     width: 100%;
     max-width: 18em;
-}
-
-.accordion__item {
+  }
+  
+  .accordion__item {
     background-color: var(--shade1);
     transition: background-color var(--trans-dur);
-}
-
-.accordion__item-btn {
+  }
+  
+  .accordion__item-btn {
     background-color: transparent;
     box-shadow: 0 0 0 0.125em hsla(var(--hue), 90%, 50%, 0) inset;
     cursor: pointer;
@@ -26,10 +29,9 @@
     width: 100%;
     transition: box-shadow calc(var(--trans-dur) / 2) var(--ease-in-out);
     -webkit-tap-highlight-color: transparent;
-}
-
-
-.accordion__item-btn:before, .accordion__item-btn:after {
+  }
+  
+  .accordion__item-btn:before, .accordion__item-btn:after {
     background-color: currentColor;
     content: "";
     display: block;
@@ -39,137 +41,137 @@
     width: 0.75em;
     height: 1px;
     transition: transform var(--trans-dur) var(--ease-in-out);
-}
-
-.accordion__item-btn:after {
+  }
+  
+  .accordion__item-btn:after {
     transform: rotate(-90deg);
-    
-}
-
-.accordion__item-btn::marker, .accordion__item-btn::-webkit-details-marker {
+  }
+  
+  .accordion__item-btn::marker, .accordion__item-btn::-webkit-details-marker {
     display: none;
-}
-
-.accordion__item-desc {
+  }
+  
+  .accordion__item-desc {
     color: var(--desc-text1);
-    min-height: 5.5em;
     padding: 0 0.5em 1em 0.5em;
-    transition: color var(--trans-dur);
-    
-}
-
-.accordion__item:nth-child(2) {
+    transition: max-height var(--anim-dur) var(--ease-in-out),
+    opacity var(--anim-dur) var(--ease-in-out);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+  }
+  
+  .accordion__item:nth-child(2) {
     background-color: var(--shade2);
-}
-
-.accordion__item:nth-child(3) {
+  }
+  
+  .accordion__item:nth-child(3) {
     background-color: var(--shade3);
-}
-
-.accordion__item:nth-child(3) .accordion__item-btn {
+  }
+  
+  .accordion__item:nth-child(3) .accordion__item-btn {
     color: var(--bg);
     transition: color var(--trans-dur);
-}
-
-.accordion__item:nth-child(3) .accordion__item-desc {
+  }
+  
+  .accordion__item:nth-child(3) .accordion__item-desc {
     color: var(--desc-text2);
-}
-
-.accordion__item:nth-child(4) {
+  }
+  
+  .accordion__item:nth-child(4) {
     background-color: var(--shade4);
-}
-
-.accordion__item.collapsing, .accordion__item.expanding {
-    overflow: hidden;
-}
-
-.accordion__item[open] .accordion__item-btn:after {
+  }
+  
+  .accordion__item[open] .accordion__item-btn:after {
     transform: rotate(0);
-}
-
-.accordion__item.expanding .accordion__item-btn:after {
+  }
+  
+  .accordion__item.expanding .accordion__item-btn:after {
     animation: accordion-minus var(--anim-dur) var(--ease-in) forwards;
-}
-
-.accordion__item.expanding .accordion__item-desc {
-    animation: accordion-fade-in var(--anim-dur) var(--ease-in) forwards; 
-}
-
-.accordion__item.collapsing .accordion__item-btn:after {
-    animation: accordion-plus var(--anim-dur) var(--ease-out) forwards; 
-}
+  }
+  
+  .accordion__item.expanding .accordion__item-desc {
+    animation: accordion-slide-in var(--anim-dur) var(--ease-in) forwards;
+  }
+  
+  .accordion__item.collapsing .accordion__item-btn:after {
+    animation: accordion-plus var(--anim-dur) var(--ease-out) forwards;
+  }
 
 .accordion__item.collapsing .accordion__item-desc {
-    animation: accordion-fade-slide-out var(--anim-dur) var(--ease-out) forwards; 
-}
+    animation: accordion-slide-out var(--anim-dur) var(--ease-out) forwards;
+    pointer-events: none;
+  }
 
-.accordion a {
+
+  .accordion a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: var(--tt-b1);
     font-family: var(--font-sans-serif-Poppins);
     color: var(--grey-noir);
-    
-}
+  }
 
-.accordion__item:nth-child(1) .accordion__item-desc a {
+  .accordion__item[open] .accordion__item-desc {
+    max-height: 500px; 
+    opacity: 1;
+  }
+  
+  .accordion__item:nth-child(1) .accordion__item-desc a {
     background-color: var(--main-colors-rouge-1);
-}
-
-.accordion__item:nth-child(2) .accordion__item-desc a {
+  }
+  
+  .accordion__item:nth-child(2) .accordion__item-desc a {
     background-color: var(--main-colors-orange-1);
-}
-
-.accordion__item:nth-child(3) .accordion__item-desc a {
+  }
+  
+  .accordion__item:nth-child(3) .accordion__item-desc a {
     background-color: var(--main-colors-jaune-1);
-}
-
-@keyframes accordion-minus {
+  }
+  
+  @keyframes accordion-minus {
     from {
-        transform: rotate(-90deg);
+      transform: rotate(-90deg);
     }
     to {
-        transform: rotate(0);
+      transform: rotate(0);
     }
-}
-
-@keyframes accordion-plus {
+  }
+  
+  @keyframes accordion-plus {
     from {
-        transform: rotate(0);
+      transform: rotate(0);
     }
     to {
-        transform: rotate(-90deg);
+      transform: rotate(90deg);
     }
+  }
+  
+@keyframes accordion-slide-in {
+  from { 
+    opacity: 0; 
+    max-height: 0;
+    padding-bottom: 0;
+  } 
+  to { 
+    opacity: 1; 
+    max-height: 500px;
+    padding-bottom: 1em;
+  } 
 }
-
-@keyframes accordion-fade-in {
-    from {
-        opacity: 0;
-        max-height: 0;
-    }
-    to {
-        opacity: 1;
-        max-height: 200px; 
-    }
-}
-
-@keyframes accordion-fade-slide-out {
-    from {
-        opacity: 1;
-        max-height: 200px; 
-    }
-    to {
-        opacity: 0;
-        max-height: 0;
-    }
-}
-
-.accordion__item.expanding .accordion__item-desc {
-    animation: accordion-fade-in var(--anim-dur) var(--ease-in) forwards;
-    overflow: hidden;
-}
-
-.accordion__item.collapsing .accordion__item-desc {
-    animation: accordion-fade-slide-out var(--anim-dur) var(--ease-out) forwards;
-    overflow: hidden;
-}
+  
+@keyframes accordion-slide-out {
+    from { 
+      opacity: 1; 
+      max-height: 500px; 
+      padding-bottom: 1em;
+      visibility: visible;
+    } 
+    to { 
+      opacity: 0; 
+      max-height: 0;
+      padding-bottom: 0;
+      visibility: hidden;
+    } 
+  }
+  
