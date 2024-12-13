@@ -6,8 +6,8 @@
 - NOM : BAUDRY
 - PRÉNOM : Léo
 - GROUPE : A2
-- URL du site :
-- URL FIGMA :
+- URL du site : http://sae-105.leo-baudry.fr/
+- URL FIGMA : https://www.figma.com/design/n0SqY8DkggP5CkNoUzIvyr/L%C3%A9o-BAUDRY-maquette-sa%C3%A9105?node-id=1-3&t=8u7UFYbL2WWRTNLr-1
 
 ## Sujet
 
