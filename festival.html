@@ -11,6 +11,7 @@
     <link rel="manifest" href="/assets/favicons/site.webmanifest" />
     <link rel="stylesheet" href="/src/css/style.css" />
     <script type="module" src="/src/js/script.js"></script>
+    <script type="module" src="/src/js/carousel.js"></script>
 </head>
 
 <body id="page_festival">
@@ -176,14 +177,14 @@
     <footer class="footer">
         <div class="footer__header">
             <a href="index.html" class="footer__logo-link">
-                <img src="assets/icons/logo64.svg" alt="Logo du festival" class="footer__logo">
+                <img src="assets/icons/logo64.svg" alt="Logo du festival" class="footer__logo" aria-hidden="true">
             </a>
             <div>
                 <h3 class="footer__title">Festival</h3>
                 <h3 class="footer__title">"Ça va trai'ler !"</h3>
             </div>
         </div>
-
+    
         <div class="footer__content">
             <nav class="footer__nav">
                 <h4 class="footer__nav-title">Menu</h4>
@@ -192,10 +193,10 @@
                     <li class="footer__nav-item"><a href="page_contact.html" class="footer__nav-link">Contacts & accès</a></li>
                 </ul>
             </nav>
-
+    
             <h5 class="footer__contact-title">Contact</h5>
             <address class="footer__address">
-                <ul class="footer__address-list">
+                <ul>
                     <li><a href="https://maps.app.goo.gl/DKkovb8BuvEcPYfT9">90000 Belfort</a></li>
                     <li><a href="tel:+33637055454" class="footer__tel">06 37 05 54 54</a></li>
                     <li><a href="mailto:contact@festival-trailer.fr" class="footer__email">contact@festival-trailer.fr</a></li>
@@ -203,14 +204,15 @@
             </address>
             <h5 class="footer__social-title">Nous suivre</h5>
         </div>
-
+    
         <ul class="footer__social">
-            <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/instagram.svg" alt="Logo Instagram" class="footer__social-icon"></a></li>
-            <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/youtube.svg" alt="Logo Youtube" class="footer__social-icon"></a></li>
-            <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/twitter.svg" alt="Logo Twitter" class="footer__social-icon"></a></li>
-            <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/facebook.svg" alt="Logo Facebook" class="footer__social-icon"></a></li>
-            <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/tiktok.svg" alt="Logo Tiktok" class="footer__social-icon"></a></li>
+            <li class="footer__social-item"><a href="#" class="footer__social-link" aria-hidden="true"><img src="assets/icons/instagram.svg" alt="Logo Instagram" class="footer__social-icon"></a></li>
+            <li class="footer__social-item"><a href="#" class="footer__social-link" aria-hidden="true"><img src="assets/icons/youtube.svg" alt="Logo Youtube" class="footer__social-icon"></a></li>
+            <li class="footer__social-item"><a href="#" class="footer__social-link" aria-hidden="true"><img src="assets/icons/twitter.svg" alt="Logo Twitter" class="footer__social-icon"></a></li>
+            <li class="footer__social-item"><a href="#" class="footer__social-link" aria-hidden="true"><img src="assets/icons/facebook.svg" alt="Logo Facebook" class="footer__social-icon"></a></li>
+            <li class="footer__social-item"><a href="#" class="footer__social-link" aria-hidden="true"><img src="assets/icons/tiktok.svg" alt="Logo Tiktok" class="footer__social-icon"></a></li>
         </ul>
-    </footer>
-</body>
-</html>
+    </footer> 
+    
+  </body>
+  </html>

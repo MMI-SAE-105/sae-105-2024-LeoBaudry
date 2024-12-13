@@ -23,6 +23,7 @@
 
   <link rel="stylesheet" href="/src/css/style.css" />
   <script type="module" src="/src/js/script.js"></script>
+  <script type="module" src="/src/js/carousel.js"></script>
 </head>
 
 <body id="page_presentation_invite">
@@ -118,17 +119,17 @@
 
     <div class="carousel" aria-labelledby="carousel-heading">
       <h2 id="carousel-heading" class="carousel__heading sr-only">
-          Carousel d'images de Sam KARMANN
+          Carousel d'images musicales
       </h2>
       <div class="carousel__container" role="region" aria-live="polite">
           <div class="carousel__item">
-              <img src="assets/img/Invite_Sam_Karmann.webp" alt="Sam KARMANN" id="item1"/>
+              <img src="assets/img/Invite_Sam_Karmann.webp" alt="Photo de Sam KARMANN" id="item1" loading="lazy" aria-hidden="true"/>
           </div>
           <div class="carousel__item">
-              <img src="assets/img/Invite_Sam_Karmann3.webp" alt="Sam KARMANN" id="item3"/>
+              <img src="assets/img/Invite_Sam_Karmann3.webp" alt="Photo de Sam KARMANN" id="item2" loading="lazy" aria-hidden="true"/>
           </div>
           <div class="carousel__item">
-              <img src="assets/img/Invite_Sam_Karmann5.webp" alt="Sam KARMANN" id="item5"/>
+              <img src="assets/img/Invite_Sam_Karmann5.webp" alt="Photo de Sam KARMANN" id="item3" loading="lazy" aria-hidden="true"/>
           </div>
       </div>
       <div class="carousel__controls">
@@ -141,19 +142,20 @@
       </div>
       <nav class="carousel__nav">
         <ul class="carousel__nav-list">
-            <li class="carousel__nav-item"><a href="#item1">Image 1</a></li>
-            <li class="carousel__nav-item"><a href="#item3">Image 2</a></li>
-            <li class="carousel__nav-item"><a href="#item5">Image 3</a></li>
+            <li class="carousel__nav-item"><a href="#item1" loading="lazy">Image 1</a></li>
+            <li class="carousel__nav-item"><a href="#item2" loading="lazy">Image 2</a></li>
+            <li class="carousel__nav-item"><a href="#item3" loading="lazy">Image 3</a></li>
         </ul>
     </nav>
   </div>
+
 
     <hr class="separator">
 
     <footer class="footer">
       <div class="footer__header">
           <a href="index.html" class="footer__logo-link">
-              <img src="assets/icons/logo64.svg" alt="Logo du festival" class="footer__logo">
+              <img src="assets/icons/logo64.svg" alt="Logo du festival" class="footer__logo" aria-hidden="true">
           </a>
           <div>
               <h3 class="footer__title">Festival</h3>
@@ -182,15 +184,13 @@
       </div>
   
       <ul class="footer__social">
-          <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/instagram.svg" alt="Logo Instagram" class="footer__social-icon"></a></li>
-          <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/youtube.svg" alt="Logo Youtube" class="footer__social-icon"></a></li>
-          <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/twitter.svg" alt="Logo Twitter" class="footer__social-icon"></a></li>
-          <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/facebook.svg" alt="Logo Facebook" class="footer__social-icon"></a></li>
-          <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/tiktok.svg" alt="Logo Tiktok" class="footer__social-icon"></a></li>
+          <li class="footer__social-item"><a href="#" class="footer__social-link" aria-hidden="true"><img src="assets/icons/instagram.svg" alt="Logo Instagram" class="footer__social-icon"></a></li>
+          <li class="footer__social-item"><a href="#" class="footer__social-link" aria-hidden="true"><img src="assets/icons/youtube.svg" alt="Logo Youtube" class="footer__social-icon"></a></li>
+          <li class="footer__social-item"><a href="#" class="footer__social-link" aria-hidden="true"><img src="assets/icons/twitter.svg" alt="Logo Twitter" class="footer__social-icon"></a></li>
+          <li class="footer__social-item"><a href="#" class="footer__social-link" aria-hidden="true"><img src="assets/icons/facebook.svg" alt="Logo Facebook" class="footer__social-icon"></a></li>
+          <li class="footer__social-item"><a href="#" class="footer__social-link" aria-hidden="true"><img src="assets/icons/tiktok.svg" alt="Logo Tiktok" class="footer__social-icon"></a></li>
       </ul>
   </footer> 
-  
-  
   
 </body>
 </html>

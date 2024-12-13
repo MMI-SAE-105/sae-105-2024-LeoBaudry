@@ -99,8 +99,10 @@
   }
 
 .accordion__item.collapsing .accordion__item-desc {
-    animation: accordion-slide-out var(--anim-dur) var(--ease-out) forwards;
-    pointer-events: none;
+    max-height: 0;
+    opacity: 0;
+    padding-bottom: 0;
+    visibility: hidden;
   }
 
 
@@ -115,8 +117,9 @@
   .accordion__item[open] .accordion__item-desc {
     max-height: 500px; 
     opacity: 1;
+    visibility: visible;
   }
-  
+
   .accordion__item:nth-child(1) .accordion__item-desc a {
     background-color: var(--main-colors-rouge-1);
   }
@@ -165,13 +168,11 @@
       opacity: 1; 
       max-height: 500px; 
       padding-bottom: 1em;
-      visibility: visible;
     } 
     to { 
       opacity: 0; 
       max-height: 0;
       padding-bottom: 0;
-      visibility: hidden;
     } 
   }
   

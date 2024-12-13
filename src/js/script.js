@@ -26,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   accordions.forEach((accordion) => {
     accordion.querySelectorAll("details").forEach((details) => {
+      
       details.addEventListener("toggle", function() {
         if (this.open) {
           this.classList.add("expanding");
@@ -41,6 +42,9 @@ document.addEventListener('DOMContentLoaded', function() {
           setTimeout(() => {
             this.classList.remove("expanding", "collapsing");
           }, 0);
+          details.addEventListener("toggle", function(e) {
+            e.preventDefault();
+          });
         }
       });
     });

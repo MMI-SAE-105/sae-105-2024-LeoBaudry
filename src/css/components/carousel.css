@@ -27,9 +27,9 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0.5px solid rgba(90, 0, 0, 0.5);
+    border: 0.5px solid rgba(90, 0, 0, 0.1);
     border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 1);
     color: var(--grey-blanc);
     cursor: pointer;
     z-index: 1;
@@ -78,24 +78,34 @@ img {
 }
 
 .carousel__nav-item {
-    display: inline-block;
-    width: 50px;
-    height: 20px;
-    border-radius: 5%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    border: none;
+    padding: 0;
     cursor: pointer;
-    text-decoration: none;
-    font-size: 13px;
-    color: var(--grey-noir); 
-    background-color: transparent; 
-    border: 1px solid var(--grey-noir); 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 5px; 
+}
+
+.carousel__nav-item.active {
+    background-color: var(--grey-noir);
+    transform: scale(1.2);
 }
 
 .carousel__nav-item a {
-    color: black; 
+    color: transparent;
+    font-size: 0;
+    text-decoration: none;
 }
 
+.carousel__nav-item {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: var(--grey-gris-2);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
 
