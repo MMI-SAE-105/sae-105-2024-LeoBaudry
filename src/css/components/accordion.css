@@ -3,6 +3,7 @@
     --trans-dur: 0.3s;
     --ease-in-out: ease-in-out;
     --ease-out: ease-out;
+    --ease-in: ease-in;
     margin: auto;
     width: 100%;
     max-width: 18em;
@@ -88,19 +89,19 @@
 }
 
 .accordion__item.expanding .accordion__item-btn:after {
-    animation: accordion-minus var(--anim-dur) var(--ease-out) forwards;
+    animation: accordion-minus var(--anim-dur) var(--ease-in) forwards;
 }
 
 .accordion__item.expanding .accordion__item-desc {
-    animation: accordion-fade-in var(--anim-dur) var(--ease-out) forwards;
+    animation: accordion-fade-in var(--anim-dur) var(--ease-in) forwards; 
 }
 
 .accordion__item.collapsing .accordion__item-btn:after {
-    animation: accordion-plus var(--anim-dur) var(--ease-out) forwards;
+    animation: accordion-plus var(--anim-dur) var(--ease-out) forwards; 
 }
 
 .accordion__item.collapsing .accordion__item-desc {
-    animation: accordion-fade-slide-out var(--anim-dur) var(--ease-out) forwards;
+    animation: accordion-fade-slide-out var(--anim-dur) var(--ease-out) forwards; 
 }
 
 .accordion a {

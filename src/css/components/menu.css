@@ -178,18 +178,18 @@
 
 .menu-btn[aria-expanded="true"] .menu-btn__bar {
     background-color: var(--grey-noir);
-    transform: rotate(45deg);
+    transform: rotate(135deg);
 }
 
 .menu-btn[aria-expanded="true"] .menu-btn__bar::before {
     top: 0;
-    transform: rotate(90deg);
+    transform: rotate(270deg);
     background-color: var(--grey-noir);
 }
 
 .menu-btn[aria-expanded="true"] .menu-btn__bar::after {
     top: 0;
-    transform: rotate(-90deg);
+    transform: rotate(-270deg);
     background-color: var(--grey-noir);
 }
 
