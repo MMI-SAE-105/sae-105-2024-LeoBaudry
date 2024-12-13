@@ -52,3 +52,32 @@
     padding: 20px 10px;
     font-size: 16px;
 }
+
+.text__list {
+    list-style-type: none; 
+    padding-left: 0.5rem; 
+}
+
+.text__list a {
+    text-decoration: none;
+    color: var(--grey-noir);
+}
+
+.text__item {
+    text-decoration: none;
+    line-height: 1.2;
+}
+
+.text__item2 {
+    text-decoration: underline;
+}
+
+.text__address a {
+    padding-left: 10px;
+    color: var(--grey-noir);
+}
+
+.text__link {
+
+    color: var(--grey-noir);
+}

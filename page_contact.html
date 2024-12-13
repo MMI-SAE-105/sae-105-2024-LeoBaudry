@@ -80,66 +80,96 @@
 </nav>
 </header>
 
-      <h1>Contact</h1>
-  
-    <section>
-      <h2>Formulaire de contact</h2>
-      <p>Pour toute <strong>question</strong>, <strong>suggestion</strong>, ou <strong>demande d'information</strong>, remplissez 
-      le formulaire ci-dessous. <em>Nous vous répondrons dans les plus brefs délais</em>.</p>
-        <form action="#" method="post">
-          <ul>
-            <li>
-              <label for="name">Nom&nbsp;:</label>
-              <input type="text" id="name" name="user_name" />
-            </li>
-            <li>
-              <label for="firstname">Prénom&nbsp;:</label>
-              <input type="text" id="firstname" name="user_firstname" />
-            <li>
-              <label for="mail">E-mail&nbsp;:</label>
-              <input type="email" id="mail" name="user_mail" />
-            </li>
-            <li>
-              <label for="msg">Message&nbsp;:</label>
-              <textarea id="msg" name="user_message"></textarea>
-            </li>
-          </ul>
-        </form>
-    </section>
+<section class="hero intro">
+  <img src="assets/img/page_contact.webp" alt="Entête" class="hero__background">
+  <h1 class="hero__title">Contact</h1>
+</section>  
 
-    <section>
-      <h2>Coordonnées</h2>
-      <p>Vous pouvez également nous écrire à l'adresse suivante pour toute demande complémentaire :</p>
-        <address>
-          <a href="mailto:contact@festival-trailer.fr">contact@festival-trailer.fr</a>
+<section class="form intro">
+  <h2 class="intro__title" id="form">Formulaire de contact</h2>
+  <p class="form__texts">Pour toute <strong>question</strong>, <strong>suggestion</strong>, ou <strong>demande d'information</strong>, remplissez
+  le formulaire ci-dessous. <em>Nous vous répondrons dans les plus brefs délais</em>.</p>
+  <form action="#form" method="get" class="form__form">
+    <ul class="form__list">
+      <li class="form__item">
+        <label for="name" class="form__label">Nom&nbsp;:</label>
+        <input type="text" id="name" name="user_name" class="form__input" />
+      </li>
+      <li class="form__item">
+        <label for="firstname" class="form__label">Prénom&nbsp;:</label>
+        <input type="text" id="firstname" name="user_firstname" class="form__input" />
+      </li>
+      <li class="form__item">
+        <label for="mail" class="form__label">E-mail&nbsp;:</label>
+        <input type="email" id="mail" name="user_mail" class="form__input" />
+      </li>
+      <li class="form__item">
+        <label for="msg" class="form__label">Message&nbsp;:</label>
+        <textarea id="msg" name="user_message" class="form__textarea"></textarea>
+      </li>
+    </ul>
+    <button type="submit" class="form__bouton">Envoyer</button>
+  </form>
+</section>
+
+<hr class="separator">
+
+    <section class="text">
+      <h2 class="text__title">Coordonnées</h2>
+      <p class="text__texts">Vous pouvez également nous écrire à l'adresse suivante pour toute demande complémentaire :</p>
+        <address class="text__address">
+          <a class="text__link" href="mailto:contact@festival-trailer.fr">contact@festival-trailer.fr</a>
         </address>
 
-      <p><strong>Retouvez-nous :</strong></p> 
-        <ul>
-          <li>Festival "<strong>Ça va Trai'ler</strong>"</li>
-          <li><em>Parc de la Douce</em>,</li>
-          <li>Rue Georges Pompidou,</li>
-          <li>90000 <strong>Belfort</strong> France.</li>  
+      <p class="text__texts"><strong>Retouvez-nous :</strong></p> 
+        <ul class="text__list">
+          <li class="text__item">Festival "<strong>Ça va Trai'ler</strong>"</li>
+          <li class="text__item"><em>Parc de la Douce</em>,</li>
+          <li class="text__item">Rue Georges Pompidou,</li>
+          <li class="text__item">90000 <strong>Belfort</strong> France.</li>  
         </ul>
       
-      <p><strong>Téléphonez-nous :</strong></p>
-      <address>
-          <a href="tel:+33637055454">06 37 05 54 54</a>
+      <p class="text__texts"><strong>Téléphonez-nous :</strong></p>
+      <address class="text__address">
+          <a class="text__link" href="tel:+33637055454">06 37 05 54 54</a>
       </address>
     </section>
 
-  <section>
-    <h2>Réseaux sociaux</h2>
-    <p>Suivez-nous sur les <strong>réseaux sociaux</strong> pour rester informé des <em>dernières actualités du festival, des 
-      annonces sur les films, les activités</em> et plus encore.</p>
-    <ul>
-      <li><a href="#"><img src="assets/icons/facebook.svg" alt="Lien Facebook"></a></li>
-      <li><a href="#"><img src="assets/icons/instagram.svg" alt="Lien Instagram"></a></li>
-      <li><a href="#"><img src="assets/icons/twitter.svg" alt="Lien Twitter"></a></li>
-      <li><a href="#"><img src="assets/icons/youtube.svg" alt="Lien Youtube"></a></li>
-      <li><a href="#"><img src="assets/icons/tiktok.svg" alt="Lien Tiktok"></a></li>
-    </ul>
-  </section>
+    <hr class="separator">
+
+    <section class="social">
+      <h2 class="social__title">Réseaux sociaux</h2>
+      <p class="social__text">Suivez-nous sur les <strong>réseaux sociaux</strong> pour rester informé des <em>dernières actualités du festival, des annonces sur les films, les activités</em> et plus encore.</p>
+      <ul class="social__list">
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <img src="assets/icons/facebook_black.svg" alt="Lien Facebook" class="social__icon">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <img src="assets/icons/instagram_black.svg" alt="Lien Instagram" class="social__icon">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <img src="assets/icons/twitter_black.svg" alt="Lien Twitter" class="social__icon">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <img src="assets/icons/youtube_black.svg" alt="Lien Youtube" class="social__icon">
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="#" class="social__link">
+            <img src="assets/icons/tiktok_black.svg" alt="Lien Tiktok" class="social__icon">
+          </a>
+        </li>
+      </ul>
+    </section>
+
+  <hr class="separator">
 
   <footer class="footer">
     <div class="footer__header">
@@ -172,7 +202,7 @@
         <h5 class="footer__social-title">Nous suivre</h5>
     </div>
 
-    <ul class="footer__social">
+    <ul class="footer__social" id="socialTag">
         <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/instagram.svg" alt="Logo Instagram" class="footer__social-icon"></a></li>
         <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/youtube.svg" alt="Logo Youtube" class="footer__social-icon"></a></li>
         <li class="footer__social-item"><a href="#" class="footer__social-link"><img src="assets/icons/twitter.svg" alt="Logo Twitter" class="footer__social-icon"></a></li>

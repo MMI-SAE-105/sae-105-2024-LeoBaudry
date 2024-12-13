@@ -1,0 +1,48 @@
+.social {
+    margin: 40px;
+    text-align: left;
+  }
+  
+  .social__title {
+    font-size: var(--tt-h2);
+    font-weight: 700;
+    color: var(--grey-noir);
+  }
+  
+  .social__text {
+    margin-bottom: 20px;
+  }
+  
+  .social__list {
+    list-style-type: none; 
+    padding: 0; 
+    display: flex; 
+    gap: 10px; 
+  }
+  
+  .social__item {
+    display: inline-block; 
+  }
+  
+  .social__link {
+    text-decoration: none; 
+  }
+  
+  .social__icon {
+    padding-left: 6px;
+    padding-right: 6px;
+    width: 40px; 
+    height: 40px; 
+}
+
+  .social__list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+  
+img {
+    margin : 0;
+    padding : 0;
+}
