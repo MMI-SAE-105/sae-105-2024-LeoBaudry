@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
     font-family: var(--font-sans-serif-Mulish);
     font-size: var(--tt-bu);
@@ -77,3 +81,4 @@ textarea {
   .noscroll {
     overflow: hidden;
   }
+

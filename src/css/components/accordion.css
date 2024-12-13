@@ -28,9 +28,6 @@
     -webkit-tap-highlight-color: transparent;
 }
 
-.accordion__item-btn:focus-visible {
-    box-shadow: 0 0 0 0.125em hsla(var(--hue), 90%, 50%, 1) inset;
-}
 
 .accordion__item-btn:before, .accordion__item-btn:after {
     background-color: currentColor;
@@ -46,6 +43,7 @@
 
 .accordion__item-btn:after {
     transform: rotate(-90deg);
+    
 }
 
 .accordion__item-btn::marker, .accordion__item-btn::-webkit-details-marker {
@@ -57,6 +55,7 @@
     min-height: 5.5em;
     padding: 0 0.5em 1em 0.5em;
     transition: color var(--trans-dur);
+    
 }
 
 .accordion__item:nth-child(2) {
@@ -110,6 +109,7 @@
     font-size: var(--tt-b1);
     font-family: var(--font-sans-serif-Poppins);
     color: var(--grey-noir);
+    
 }
 
 .accordion__item:nth-child(1) .accordion__item-desc a {
@@ -124,7 +124,6 @@
     background-color: var(--main-colors-jaune-1);
 }
 
-/* Animations */
 @keyframes accordion-minus {
     from {
         transform: rotate(-90deg);
@@ -146,19 +145,31 @@
 @keyframes accordion-fade-in {
     from {
         opacity: 0;
+        max-height: 0;
     }
     to {
         opacity: 1;
+        max-height: 200px; 
     }
 }
 
 @keyframes accordion-fade-slide-out {
     from {
         opacity: 1;
-        transform: translateY(0);
+        max-height: 200px; 
     }
     to {
         opacity: 0;
-        transform: translateY(-0.75em);
+        max-height: 0;
     }
+}
+
+.accordion__item.expanding .accordion__item-desc {
+    animation: accordion-fade-in var(--anim-dur) var(--ease-in) forwards;
+    overflow: hidden;
+}
+
+.accordion__item.collapsing .accordion__item-desc {
+    animation: accordion-fade-slide-out var(--anim-dur) var(--ease-out) forwards;
+    overflow: hidden;
 }
